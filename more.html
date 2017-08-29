@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset='utf-8'>
-<meta content='ie=edge' http-equiv='x-ua-compatible'>
-<meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='width=1024, user-scalable=yes' name='viewport'>
 <title>Quadratic labs</title>
-<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+<link href="//fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet" />
+<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+<link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
 <link href="stylesheets/site.css" rel="stylesheet" />
 </head>
 <body>
@@ -15,7 +15,7 @@
 <div class='nav' id='side-nav'>
 <a href="/team.html" class="left"><span class='line'></span>
 Team
-</a><a href="#" class="right">Contacts
+</a><a href="/contacts.html" class="right">Contacts
 <span class='line'></span>
 </a></div>
 
@@ -24,20 +24,26 @@ Team
 </a></div>
 
 <div class='nav' id='bottom-nav'>
-<a href="/customers.html">What customers say about us</a>
-</div>
+<a href="/customers.html"><p>
+customers
+<br>
+and feedbacks about us
+</p>
+</a></div>
 
 <div class='nav' id='main-nav'>
 <ul>
-<li><a href="#">Who we are</a></li>
-<li><a href="#">What we actually do</a></li>
-<li><a href="#">Value propositions</a></li>
+<li><a href="#" class="first">We solve the problem</a></li>
+<li><a href="#" class="second">What we actually do</a></li>
+<li><a href="#" class="third">Products</a></li>
 </ul>
 <div id='language'>
 <a href="#">UA</a>
 </div>
 </div>
 
+<div class='slider-more'>
+<div class='slide first'>
 <h2>
 <span class="brackets">Q</span>uadr<span class="highlight">a</span>t<span class="highlight">i</span>c Labs
 </h2>
@@ -46,7 +52,7 @@ Team
 <div>
 <h3>Data science think tank</h3>
 <p>
-Quadratic Labs is happy to offer business intelligence systems design and implementation, data-driven conversion rate optimizations, behavioral and qualitative data research, predictions and trends. We empower companies with the tools to  understand customers on scale, build products they love
+The gap between data and actionable insights is huge. Companies would need reliable data, time, technology and people to make a difference. There are also unknown unknowns, which matter a lot, but not easy to discover.
 </p>
 </div>
 <div>
@@ -79,10 +85,77 @@ Quadratic Labs is happy to offer business intelligence systems design and implem
 </section>
 </div>
 </div>
+<div class='slide second'>
+<div class='about'>
+<h3>Services</h3>
+<p>
+Insights make difference only when they are based on reliable data. That’s why we provide the next services for our customers:
+</p>
+<ul>
+<li>Design and build data collection structures</li>
+<li>Build custom data-science solutions</li>
+<li>Machine lerning solution</li>
+</ul>
+<h3>Most of the experience in</h3>
+<div>
+<div class='item gaming'>
+<img src="images/gaming.png" alt="Gaming" />
+<h4>Gaming</h4>
+</div>
+<div class='item telecom'>
+<img src="images/telecom.png" alt="Telecom" />
+<h4>Telecom</h4>
+</div>
+<div class='item ecommerce'>
+<img src="images/ecommerce.png" alt="Ecommerce" />
+<h4>E-commerce</h4>
+</div>
+</div>
+</div>
+</div>
+<div class='slide third'>
+<div class='about'>
+<div id='tabs'>
+<ul>
+<li>
+<a href='#tab-1'>Needle</a>
+</li>
+<li>
+<a href='#tab-2'>Threads</a>
+</li>
+</ul>
+<div id='tab-1'>
+<p>Designed to identify opportunities for improvement based on outperforming outliers. Usually they exist on intersection of very complex patterns, so its like “finding a needle in a haystack”. Marketing and product teams leverage our insights by acquiring more of lucrative customers, or projecting experience of the outliers on majority.</p>
+<ul>
+<li>Decompose and analyze the funnel on scale</li>
+<li>Watch and understand your whales and outliers</li>
+<li>Engage with micro-segments in super-targeted way</li>
+</ul>
+<img src="images/tab1-model.png" alt="Tab1 model" />
+</div>
+<div id='tab-2'>
+<p>Discovers retention patterns and opportunities to drive frequent and long-term customer engagements. As a deliverables product people have insights of when to engage with the customer and context for the communication. On the scale.</p>
+<ul>
+<li>Identify micro-segment and return them</li>
+<li>Pick up the best moments to engage with our customers</li>
+<li>Discover retention bottlenecks on a scale</li>
+</ul>
+<img src="images/tab2-model.png" alt="Tab2 model" />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="https://oss.maxcdn.com/libs/snapsvg/0.1.0/snap.svg-min.js"></script>
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="//oss.maxcdn.com/libs/snapsvg/0.1.0/snap.svg-min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.7.1/slick/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.0/Tween.min.js"></script>
+<script src="javascripts/three.min.js"></script>
+<script src="javascripts/app.js"></script>
 <script src="javascripts/site.js"></script>
 </body>
 </html>

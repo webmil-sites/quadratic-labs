@@ -547,6 +547,7 @@ ul {
     top: 42%;
     width: 100%;
     margin: 0;
+    margin-left: 45px;
     font-family: "Averta", sans-serif;
     font-weight: 900;
     color: #fff;
@@ -578,6 +579,7 @@ ul {
     display: table;
     width: calc(100% - 60px);
     height: 200px;
+    margin-left: 45px;
     padding: 15px 0;
     font-family: "PT Serif", sans-serif;
     background: rgba(0, 0, 0, 0.2); }
@@ -1432,6 +1434,7 @@ ul {
               background-color: #02d2d9; }
     @media screen and (min-width: 1920px) {
       #contacts .about {
+        width: 81%;
         margin-left: 19%; }
         #contacts .about section {
           width: 40%; }

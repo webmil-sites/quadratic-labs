@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset='utf-8'>
-<meta content='ie=edge' http-equiv='x-ua-compatible'>
-<meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='width=1024, user-scalable=yes' name='viewport'>
 <title>Quadratic labs</title>
-<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+<link href="//fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet" />
+<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+<link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
 <link href="stylesheets/site.css" rel="stylesheet" />
 </head>
 <body>
+<div class='dots'></div>
 <div id='team-content'>
 <div class='nav' id='top-nav'>
 <a href="../">Home
 </a></div>
 
 <div class='nav' id='side-nav'>
-<a href="../" class="right">Back
+<a href="#" class="right" onclick="goBack()">Back
 <span class='line'></span>
 </a></div>
-<div class='member-details'>
-<img src="images/CTO-large.png" alt="Cto large" />
+<div class='member-details slider-for'>
+<div class='slide'>
+<img src="images/MAG-26.jpg" alt="Mag 26" />
+<div class='details'>
+<h2>
+Aleksandr
+<br>
+Furtak
+</h2>
+<h3>
+CEO
+</h3>
+<div class='hobbies'>
+<img src="images/doughnut.png" alt="Doughnut" />
+<ul>
+<li>Drinked coffee</li>
+<li>Drinked tea</li>
+<li>Generated ideas</li>
+</ul>
+</div>
+<p>
+Some description
+</p>
+</div>
+</div>
+<div class='slide'>
+<img src="images/MAG-36.jpg" alt="Mag 36" />
 <div class='details'>
 <h2>
 Iaroslav
@@ -39,69 +65,143 @@ CTO
 </ul>
 </div>
 <p>
-Something something dark side
+Some description
 </p>
+</div>
+</div>
+<div class='slide'>
+<img src="images/MAG-43.jpg" alt="Mag 43" />
+<div class='details'>
+<h2>
+Andrew
+<br>
+Dyshuk
+</h2>
+<h3>
+Strategic Advisor
+</h3>
+<div class='hobbies'>
+<img src="images/doughnut.png" alt="Doughnut" />
+<ul>
+<li>Drinked coffee</li>
+<li>Drinked tea</li>
+<li>Generated ideas</li>
+</ul>
+</div>
+<p>
+Some description
+</p>
+</div>
+</div>
+<div class='slide'>
+<img src="images/MAG-67.jpg" alt="Mag 67" />
+<div class='details'>
+<h2>
+Vlad
+<br>
+Hrytsenko
+</h2>
+<h3>
+Backend Engineer
+</h3>
+<div class='hobbies'>
+<img src="images/doughnut.png" alt="Doughnut" />
+<ul>
+<li>Drinked coffee</li>
+<li>Drinked tea</li>
+<li>Generated ideas</li>
+</ul>
+</div>
+<p>
+Some description
+</p>
+</div>
+</div>
+<div class='slide'>
+<img src="images/MAG-46.jpg" alt="Mag 46" />
+<div class='details'>
+<h2>
+Viktor
+<br>
+Didkovskiy
+</h2>
+<h3>
+Data Scientist
+</h3>
+<div class='hobbies'>
+<img src="images/doughnut.png" alt="Doughnut" />
+<ul>
+<li>Drinked coffee</li>
+<li>Drinked tea</li>
+<li>Generated ideas</li>
+</ul>
+</div>
+<p>
+Some description
+</p>
+</div>
 </div>
 </div>
 <div class='members-list'>
-<ul>
-<li>
+<div class='nav'>
+<div class='slider-nav'>
+<div class='thumbnail'>
+<p>
+Aleksandr
+<br>
+Furtak
+</p>
+<div class='picture'>
+<img src="images/MAG-26.jpg" alt="Mag 26" />
+<div class='hover'>
+<img src="images/icon-user.png" alt="Icon user" />
+</div>
+</div>
+</div>
+<div class='thumbnail'>
 <p>
 Iaroslav
 <br>
 Bezkorovainyi
 </p>
 <div class='picture'>
-<img src="images/CTO-small.png" alt="Cto small" />
+<img src="images/MAG-36.jpg" alt="Mag 36" />
 <div class='hover'>
 <img src="images/icon-user.png" alt="Icon user" />
 </div>
 </div>
-</li>
-<li>
+</div>
+<div class='thumbnail'>
 <p>
-Iaroslav
+Andrew
 <br>
-Bezkorovainyi
+Dyshuk
 </p>
 <div class='picture'>
-<img src="images/CTO-small.png" alt="Cto small" />
+<img src="images/MAG-43.jpg" alt="Mag 43" />
 <div class='hover'>
 <img src="images/icon-user.png" alt="Icon user" />
 </div>
 </div>
-</li>
-<li>
+</div>
+<div class='thumbnail'>
 <p>
-Iaroslav
+Vlad
 <br>
-Bezkorovainyi
+Hrytsenko
 </p>
 <div class='picture'>
-<img src="images/CTO-small.png" alt="Cto small" />
+<img src="images/MAG-67.jpg" alt="Mag 67" />
 <div class='hover'>
 <img src="images/icon-user.png" alt="Icon user" />
 </div>
 </div>
-</li>
-<li>
-<p>
-Iaroslav
-<br>
-Bezkorovainyi
-</p>
-<div class='picture'>
-<img src="images/CTO-small.png" alt="Cto small" />
-<div class='hover'>
-<img src="images/icon-user.png" alt="Icon user" />
 </div>
-</div>
-</li>
-<li class='qa'>
+<div class='thumbnail'>
 <p>
-Quality
+Viktor
 <br>
-assurance
+Didkovskiy
 </p>
 <div class='picture'>
 <img src="images/icon-lead.png" alt="Icon lead" />
@@ -109,17 +209,23 @@ assurance
 <img src="images/icon-user.png" alt="Icon user" />
 </div>
 </div>
-</li>
-<li class='join'>
+</div>
+</div>
+<div class='join'>
 <span>+</span>
 <p>join the team</p>
-</li>
-</ul>
+</div>
+</div>
 </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="https://oss.maxcdn.com/libs/snapsvg/0.1.0/snap.svg-min.js"></script>
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="//oss.maxcdn.com/libs/snapsvg/0.1.0/snap.svg-min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.7.1/slick/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.0/Tween.min.js"></script>
+<script src="javascripts/three.min.js"></script>
+<script src="javascripts/app.js"></script>
 <script src="javascripts/site.js"></script>
 </body>
 </html>

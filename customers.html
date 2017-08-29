@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset='utf-8'>
-<meta content='ie=edge' http-equiv='x-ua-compatible'>
-<meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='width=1024, user-scalable=yes' name='viewport'>
 <title>Quadratic labs</title>
-<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+<link href="//fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet" />
+<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+<link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
 <link href="stylesheets/site.css" rel="stylesheet" />
 </head>
 <body>
@@ -19,26 +19,79 @@
 <div class='nav' id='side-nav'>
 <a href="/team.html" class="left"><span class='line'></span>
 Team
-</a><a href="#" class="right">Contacts
+</a><a href="/contacts.html" class="right">Contacts
 <span class='line'></span>
 </a></div>
 
 <div class='nav' id='main-nav'>
 <ul>
-<li><a href="#">Who we are</a></li>
-<li><a href="#">What we actually do</a></li>
-<li><a href="#">Value propositions</a></li>
+<li><a href="#" class="first">We solve the problem</a></li>
+<li><a href="#" class="second">What we actually do</a></li>
+<li><a href="#" class="third">Products</a></li>
 </ul>
 <div id='language'>
 <a href="#">UA</a>
 </div>
 </div>
 
-<div class='quotes'>
-<section>
-<div>
-<h4>what customers say about us</h4>
+<div class='customers'>
+<div class='title'>
+<h4>customers and feedbacks about us</h4>
 </div>
+<div>
+<div class='customer'>
+<div>
+<img src="images/customers/ultra.png" alt="Ultra" />
+</div>
+<span>Telecom operator</span>
+</div>
+<div class='customer'>
+<div>
+<img src="images/customers/pibox.png" alt="Pibox" />
+</div>
+<span>Music collaboration software</span>
+</div>
+<div class='customer'>
+<div>
+<img src="images/customers/mdf.png" alt="Mdf" />
+</div>
+<span>Duty-free marketplace</span>
+</div>
+<div class='customer'>
+<div>
+<img src="images/customers/yoyo.png" alt="Yoyo" />
+</div>
+<span>Takeaway systems for restaurants</span>
+</div>
+</div>
+<div>
+<div class='customer'>
+<div>
+<img src="images/customers/reboot.png" alt="Reboot" />
+</div>
+<span>Coaching company</span>
+</div>
+<div class='customer'>
+<div>
+<img src="images/customers/noodle.png" alt="Noodle" />
+</div>
+<span>Receipts</span>
+</div>
+<div class='customer'>
+<div>
+<img src="images/customers/hw.png" alt="Hw" />
+</div>
+<span>Best homework application</span>
+</div>
+<div class='customer'>
+<div>
+<img src="images/customers/noodle.png" alt="Noodle" />
+</div>
+<span>Risk assesment solutions</span>
+</div>
+</div>
+</div>
+<div class='feedbacks'>
 <div>
 <section class='quote'>
 <div class='about'>
@@ -76,20 +129,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 </p>
 </section>
-<section class='quote'>
-<div class='about'>
-<img src="images/customer.png" alt="Customer" />
-<div>
-<p>Viktor</p>
-<span>director of the bank</span>
 </div>
 </div>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</p>
-</section>
-</div>
-</section>
 <div class='footer'>
 <div class='inner'>
 <img src="images/logo-white.png" alt="Logo white" />
@@ -103,10 +144,14 @@ Quadratic Labs. All rights reserved
 </div>
 </div>
 </div>
-</div>
 
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="https://oss.maxcdn.com/libs/snapsvg/0.1.0/snap.svg-min.js"></script>
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="//oss.maxcdn.com/libs/snapsvg/0.1.0/snap.svg-min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.7.1/slick/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.0/Tween.min.js"></script>
+<script src="javascripts/three.min.js"></script>
+<script src="javascripts/app.js"></script>
 <script src="javascripts/site.js"></script>
 </body>
 </html>

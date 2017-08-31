@@ -109,12 +109,11 @@ $(document).ready(function(){
 // var x2End = $( "h1" ).position().left + ($( "h1" ).width()/2) - 100;
 // var y2End = $( "h1" ).position().top + $( "h1" ).height() + 50;
 
-// var x2Start = $("span#anchor").position().left + ($("span#anchor").width()/2);
+// var x2Start = $("#anchor").position().left + ($("#anchor").width()/2);
 // var y2Start = $("body").height() - 195;
 
 // var x2Dot = x2Start + (x2End - x2Start)/2;
 // var y2Dot = y2Start + (y2End - y2Start)/2;
-// console.log($("span#anchor").position());
 
 // animLine(("M "+x1Start+" "+y1Start) + ("L "+(x1Dot - 20)+" "+(y1Dot + 20)) + ("L "+x1End+" "+y1End), ("M "+x1Start+" "+y1Start) + ("L "+(x1Dot+10)+" "+(y1Dot-10)) + ("L "+x1End+" "+y1End));
 // animLine(("M "+x1Start+" "+y1Start) + ("L "+(x1Dot - 30)+" "+(y1Dot + 25)) + ("L "+x1End+" "+y1End), ("M "+x1Start+" "+y1Start) + ("L "+(x1Dot+15)+" "+(y1Dot-15)) + ("L "+x1End+" "+y1End));

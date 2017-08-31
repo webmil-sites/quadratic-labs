@@ -1,5 +1,5 @@
 
-var s16 = Snap( $('.slider-more .first svg.top')[0] );
+var s16 = Snap( $('.slider-for-more .first svg.top')[0] );
 var sWidth4 = 300;
 var sHeight4 = 200;
 
@@ -9,22 +9,6 @@ var grafSize4 = sWidth4/line16.length;
 s16.attr({width:sWidth4,height:sHeight4});
 
 line16.attr({stroke: Color,strokeWidth: lineWidth });
-
-for(i=0;i<line16.length;i++){
-  if(i==0){
-    line16[i].attr({x1:grafSize4*i,x2:grafSize4*(i+1),y2:sHeight4});
-  }else if (i!==0){
-    if(i==line16.length-1){
-      line16[i].attr({x1:grafSize4*i,x2:grafSize4*(i+1),y1:sHeight4});
-    } else {
-      if((i%2)==0){
-    line16[i].attr({x1:grafSize4*i,x2:grafSize4*(i+1),y1:sHeight4, y2:sHeight4});
-  }else {
-    line16[i].attr({x1:grafSize4*i,x2:grafSize4*(i+1),y1:sHeight4, y2:sHeight4});
-  }
-    }
-  } 
-};
 
 setInterval(function(){
   for(i=0;i<line16.length;i++){
@@ -43,7 +27,7 @@ setInterval(function(){
   };
 },speed);
 ////////////////////////////////////////////////////////////////////////////////////////
-var s17 = Snap( $('.slider-more .first svg.top')[1] );
+var s17 = Snap( $('.slider-for-more .first svg.top')[1] );
 
 var line17 = s17.selectAll( 'line' );
 
@@ -51,22 +35,6 @@ var line17 = s17.selectAll( 'line' );
 s17.attr({width:sWidth4,height:sHeight4});
 
 line17.attr({stroke: Color,strokeWidth: lineWidth });
-
-for(i=0;i<line17.length;i++){
-  if(i==0){
-    line17[i].attr({x1:grafSize4*i,x2:grafSize4*(i+1),y2:sHeight4});
-  }else if (i!==0){
-    if(i==line17.length-1){
-      line17[i].attr({x1:grafSize4*i,x2:grafSize4*(i+1),y1:sHeight4});
-    } else {
-      if((i%2)==0){
-    line17[i].attr({x1:grafSize4*i,x2:grafSize4*(i+1),y1:sHeight4, y2:sHeight4});
-  }else {
-    line17[i].attr({x1:grafSize4*i,x2:grafSize4*(i+1),y1:sHeight4, y2:sHeight4});
-  }
-    }
-  } 
-};
 
 setInterval(function(){
   for(i=0;i<line17.length;i++){
@@ -85,7 +53,7 @@ setInterval(function(){
   };
 },speed);
 /////////////////////////////////////////////////////////////////////////////////////////
-var s18 = Snap( $('.slider-more .first svg.top')[2] );
+var s18 = Snap( $('.slider-for-more .first svg.top')[2] );
 
 var line18 = s18.selectAll( 'line' );
 
@@ -93,22 +61,6 @@ var line18 = s18.selectAll( 'line' );
 s18.attr({width:sWidth4,height:sHeight4});
 
 line18.attr({stroke: Color,strokeWidth: lineWidth });
-
-for(i=0;i<line18.length;i++){
-  if(i==0){
-    line18[i].attr({x1:grafSize4*i,x2:grafSize4*(i+1),y2:sHeight4});
-  }else if (i!==0){
-    if(i==line18.length-1){
-      line18[i].attr({x1:grafSize4*i,x2:grafSize4*(i+1),y1:sHeight4});
-    } else {
-      if((i%2)==0){
-    line18[i].attr({x1:grafSize4*i,x2:grafSize4*(i+1),y1:sHeight4, y2:sHeight4});
-  }else {
-    line18[i].attr({x1:grafSize4*i,x2:grafSize4*(i+1),y1:sHeight4, y2:sHeight4});
-  }
-    }
-  } 
-};
 
 setInterval(function(){
   for(i=0;i<line18.length;i++){
@@ -127,7 +79,7 @@ setInterval(function(){
   };
 },speed);
 ///////////////////////////////////////////////////////////////////////////////////////
-var s19 = Snap( $('.slider-more .first svg.top')[3] );
+var s19 = Snap( $('.slider-for-more .first svg.top')[3] );
 
 var line19 = s19.selectAll( 'line' );
 
@@ -135,22 +87,6 @@ var line19 = s19.selectAll( 'line' );
 s19.attr({width:sWidth4,height:sHeight4});
 
 line19.attr({stroke: Color,strokeWidth: lineWidth });
-
-for(i=0;i<line19.length;i++){
-  if(i==0){
-    line19[i].attr({x1:grafSize4*i,x2:grafSize4*(i+1),y2:sHeight4});
-  }else if (i!==0){
-    if(i==line19.length-1){
-      line19[i].attr({x1:grafSize4*i,x2:grafSize4*(i+1),y1:sHeight4});
-    } else {
-      if((i%2)==0){
-    line19[i].attr({x1:grafSize4*i,x2:grafSize4*(i+1),y1:sHeight4, y2:sHeight4});
-  }else {
-    line19[i].attr({x1:grafSize4*i,x2:grafSize4*(i+1),y1:sHeight4, y2:sHeight4});
-  }
-    }
-  } 
-};
 
 setInterval(function(){
   for(i=0;i<line19.length;i++){

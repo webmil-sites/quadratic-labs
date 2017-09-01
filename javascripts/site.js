@@ -18,9 +18,6 @@ window.onload=function(){
   });
 
   $('.slider-for-more').slick({
-    autoplay: true,
-    autoplaySpeed: 9000,
-    infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
@@ -52,19 +49,19 @@ $(document).ready(function(){
     focusOnSelect: true
   });
 
-  $('.slider-for').slick({
+  $('.slider-for-team').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     draggable: false,
     swipe: false,
     fade: true,
-    asNavFor: '.slider-nav'
+    asNavFor: '.slider-nav-team'
   });
 
-  $('.slider-nav').slick({
+  $('.slider-nav-team').slick({
     slidesToShow: 5,
-    asNavFor: '.slider-for',
+    asNavFor: '.slider-for-team',
     dots: false,
     draggable: false,
     swipe: false,

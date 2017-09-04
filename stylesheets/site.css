@@ -288,7 +288,8 @@ body {
       padding: 0 30px; } }
 
 .wrap {
-  height: calc(100vh - 30px);
+  height: 130vh;
+  /*height: calc(100vh - 30px);*/
   margin: 15px 0; }
   @media only screen and (width: 1024px) and (orientation: landscape) {
     .wrap {
@@ -733,7 +734,11 @@ ul {
     #team-content .member-details .slick-track {
       height: 100%; }
     #team-content .member-details svg {
-      position: absolute; }
+      position: absolute;
+      display: none; }
+      @media screen and (min-width: 1920px) {
+        #team-content .member-details svg {
+          display: inline-block; } }
     #team-content .member-details .slide {
       height: 100%;
       min-height: auto; }
@@ -1049,9 +1054,11 @@ ul {
   background-size: cover; }
   #more-content #top-nav {
     top: 30px; }
-  @media screen and (min-width: 1200px) {
-    #more-content.wrap {
-      height: calc(100vh - 60px); } }
+  #more-content.wrap {
+    /*height: 130vh;*/ }
+    @media screen and (min-width: 1200px) {
+      #more-content.wrap {
+        height: calc(100vh - 60px); } }
   #more-content #main-nav li:before {
     content: ''; }
   #more-content #bottom-nav {
@@ -1126,174 +1133,176 @@ ul {
       @media screen and (min-width: 1800px) {
         #more-content ul li {
           font-size: 16px; } }
-  @media only screen and (width: 1024px) and (orientation: landscape) {
-    #more-content .slide {
-      height: auto; } }
-  #more-content .slide svg {
-    position: absolute;
-    display: none; }
-    @media screen and (min-width: 1920px) {
-      #more-content .slide svg {
-        display: inline-block; } }
-  #more-content .slide.first svg.top {
-    top: 6px;
-    left: 15%; }
+  #more-content .slide {
+    height: 100%; }
+    @media only screen and (width: 1024px) and (orientation: landscape) {
+      #more-content .slide {
+        height: auto; } }
+    #more-content .slide svg {
+      position: absolute;
+      display: none; }
+      @media screen and (min-width: 1920px) {
+        #more-content .slide svg {
+          display: inline-block; } }
+    #more-content .slide.first svg.top {
+      top: 6px;
+      left: 15%; }
 @-moz-document url-prefix() {
   #more-content .slide.first svg.top {
     width: 300px;
     height: 200px; } }
-  #more-content .slide.first svg.bottom {
-    right: 0;
-    bottom: 40px; }
+    #more-content .slide.first svg.bottom {
+      right: 0;
+      bottom: 40px; }
 @-moz-document url-prefix() {
   #more-content .slide.first svg.bottom {
     width: 1200px;
     height: 300px; } }
-  #more-content .slide.second svg.top {
-    top: 8px;
-    left: 33%; }
+    #more-content .slide.second svg.top {
+      top: 8px;
+      left: 33%; }
 @-moz-document url-prefix() {
   #more-content .slide.second svg.top {
     width: 250px;
     height: 200px; } }
-  #more-content .slide.second svg.bottom {
-    right: 0;
-    bottom: 40px; }
+    #more-content .slide.second svg.bottom {
+      right: 0;
+      bottom: 40px; }
 @-moz-document url-prefix() {
   #more-content .slide.second svg.bottom {
     width: 1200px;
     height: 300px; } }
-  #more-content .slide.second h3:first-child {
-    position: relative;
-    display: inline-block;
-    margin: 25px 20% 25px 0; }
-    #more-content .slide.second h3:first-child:before, #more-content .slide.second h3:first-child:after {
-      position: absolute;
-      top: -6px; }
-    #more-content .slide.second h3:first-child:before {
-      content: url("../images/left-bracket.png");
-      left: -14px; }
-    #more-content .slide.second h3:first-child:after {
-      content: url("../images/right-bracket.png");
-      right: -14px; }
-    @media screen and (min-width: 1200px) {
-      #more-content .slide.second h3:first-child {
-        margin: 35px 20% 35px 0;
-        letter-spacing: 4px; } }
-    @media screen and (min-width: 1600px) {
-      #more-content .slide.second h3:first-child {
-        margin: 120px 20% 30px 0; } }
-    @media screen and (min-width: 1900px) {
+    #more-content .slide.second h3:first-child {
+      position: relative;
+      display: inline-block;
+      margin: 25px 20% 25px 0; }
       #more-content .slide.second h3:first-child:before, #more-content .slide.second h3:first-child:after {
-        top: 3px; } }
-  #more-content .slide.second p {
-    width: 70%;
-    margin-bottom: 35px; }
-  #more-content .slide.second ul {
-    margin-bottom: 65px; }
-    @media screen and (min-width: 1900px) {
-      #more-content .slide.second ul {
-        margin-bottom: 100px; } }
-  #more-content .slide.second .about > div {
-    width: 75%;
-    padding-top: 50px; }
-  #more-content .slide.second .item {
-    position: relative;
-    display: inline-block;
-    float: left;
-    text-align: center; }
-    #more-content .slide.second .item:nth-child(2) {
-      margin: 0 100px; }
-    #more-content .slide.second .item img {
-      display: inline-block; }
-  #more-content .slide.third #tab-1 svg.bottom {
-    right: -149%;
-    bottom: 315px; }
+        position: absolute;
+        top: -6px; }
+      #more-content .slide.second h3:first-child:before {
+        content: url("../images/left-bracket.png");
+        left: -14px; }
+      #more-content .slide.second h3:first-child:after {
+        content: url("../images/right-bracket.png");
+        right: -14px; }
+      @media screen and (min-width: 1200px) {
+        #more-content .slide.second h3:first-child {
+          margin: 35px 20% 35px 0;
+          letter-spacing: 4px; } }
+      @media screen and (min-width: 1600px) {
+        #more-content .slide.second h3:first-child {
+          margin: 120px 20% 30px 0; } }
+      @media screen and (min-width: 1900px) {
+        #more-content .slide.second h3:first-child:before, #more-content .slide.second h3:first-child:after {
+          top: 3px; } }
+    #more-content .slide.second p {
+      width: 70%;
+      margin-bottom: 35px; }
+    #more-content .slide.second ul {
+      margin-bottom: 65px; }
+      @media screen and (min-width: 1900px) {
+        #more-content .slide.second ul {
+          margin-bottom: 100px; } }
+    #more-content .slide.second .about > div {
+      width: 75%;
+      padding-top: 50px; }
+    #more-content .slide.second .item {
+      position: relative;
+      display: inline-block;
+      float: left;
+      text-align: center; }
+      #more-content .slide.second .item:nth-child(2) {
+        margin: 0 100px; }
+      #more-content .slide.second .item img {
+        display: inline-block; }
+    #more-content .slide.third #tab-1 svg.bottom {
+      right: -149%;
+      bottom: 315px; }
 @-moz-document url-prefix() {
   #more-content .slide.third #tab-1 svg.bottom {
     width: 1200px;
     height: 300px; } }
-  #more-content .slide.third #tab-2 svg.bottom {
-    right: -70%;
-    bottom: 295px; }
+    #more-content .slide.third #tab-2 svg.bottom {
+      right: -70%;
+      bottom: 295px; }
 @-moz-document url-prefix() {
   #more-content .slide.third #tab-2 svg.bottom {
     width: 400px;
     height: 500px; } }
-    @media screen and (min-width: 2500px) {
-      #more-content .slide.third #tab-2 svg.bottom {
-        right: -56%; } }
-  #more-content .slide.third .about {
-    height: 100%;
-    margin-left: 10%; }
-    @media screen and (min-width: 1920px) {
-      #more-content .slide.third .about {
-        margin-left: 21%; } }
-  #more-content .slide.third #tabs {
-    width: 70%;
-    height: 100%;
-    margin-top: 100px;
-    background: transparent;
-    border: none;
-    color: #fff; }
-    @media screen and (min-width: 1920px) {
-      #more-content .slide.third #tabs {
-        width: 50%; } }
-    #more-content .slide.third #tabs > ul {
-      margin-bottom: 115px;
-      background: none;
-      border: none; }
-      #more-content .slide.third #tabs > ul li {
-        margin: 0;
+      @media screen and (min-width: 2500px) {
+        #more-content .slide.third #tab-2 svg.bottom {
+          right: -56%; } }
+    #more-content .slide.third .about {
+      margin-left: 10%; }
+      @media screen and (min-width: 1920px) {
+        #more-content .slide.third .about {
+          height: 91vh;
+          margin-left: 21%; } }
+    #more-content .slide.third #tabs {
+      width: 70%;
+      height: 100%;
+      margin-top: 100px;
+      background: transparent;
+      border: none;
+      color: #fff; }
+      @media screen and (min-width: 1920px) {
+        #more-content .slide.third #tabs {
+          width: 50%; } }
+      #more-content .slide.third #tabs > ul {
+        margin-bottom: 115px;
         background: none;
         border: none; }
-        #more-content .slide.third #tabs > ul li:before {
-          content: ''; }
-        #more-content .slide.third #tabs > ul li:focus {
-          outline: none; }
-        #more-content .slide.third #tabs > ul li a {
-          margin: 0 30px;
-          padding: 0;
-          font-family: "PTSerfis",sans-seif;
-          font-size: 44px;
-          color: #09b4e9;
-          border-bottom: 2px solid #09b4e9;
-          line-height: 38px; }
-          #more-content .slide.third #tabs > ul li a:first-child {
-            margin-left: 0; }
-          #more-content .slide.third #tabs > ul li a:focus {
+        #more-content .slide.third #tabs > ul li {
+          margin: 0;
+          background: none;
+          border: none; }
+          #more-content .slide.third #tabs > ul li:before {
+            content: ''; }
+          #more-content .slide.third #tabs > ul li:focus {
             outline: none; }
-        #more-content .slide.third #tabs > ul li.ui-tabs-active {
-          border: none;
-          background: none; }
-          #more-content .slide.third #tabs > ul li.ui-tabs-active a {
-            color: #fff;
-            text-decoration: none;
-            border-bottom: none; }
-    #more-content .slide.third #tabs .ui-tabs-panel {
-      position: relative;
-      width: 80%;
-      height: 100%;
-      padding: 0; }
-    #more-content .slide.third #tabs p {
-      margin-bottom: 35px;
-      color: #fff; }
-    #more-content .slide.third #tabs li {
-      color: #fff; }
-    #more-content .slide.third #tabs img {
-      position: absolute;
-      top: -184px;
-      right: -247px;
-      width: 50%; }
-      @media screen and (min-width: 1366px) {
-        #more-content .slide.third #tabs img {
-          right: -325px; } }
-      @media screen and (min-width: 1920px) {
-        #more-content .slide.third #tabs img {
-          right: -415px;
-          width: 375px; } }
-    #more-content .slide.third #tabs #tab-2 img, #more-content .slide.third #tabs #tab-3 img {
-      top: -157px; }
+          #more-content .slide.third #tabs > ul li a {
+            margin: 0 30px;
+            padding: 0;
+            font-family: "PTSerfis",sans-seif;
+            font-size: 44px;
+            color: #09b4e9;
+            border-bottom: 2px solid #09b4e9;
+            line-height: 38px; }
+            #more-content .slide.third #tabs > ul li a:first-child {
+              margin-left: 0; }
+            #more-content .slide.third #tabs > ul li a:focus {
+              outline: none; }
+          #more-content .slide.third #tabs > ul li.ui-tabs-active {
+            border: none;
+            background: none; }
+            #more-content .slide.third #tabs > ul li.ui-tabs-active a {
+              color: #fff;
+              text-decoration: none;
+              border-bottom: none; }
+      #more-content .slide.third #tabs .ui-tabs-panel {
+        position: relative;
+        width: 80%;
+        height: 100%;
+        padding: 0; }
+      #more-content .slide.third #tabs p {
+        margin-bottom: 35px;
+        color: #fff; }
+      #more-content .slide.third #tabs li {
+        color: #fff; }
+      #more-content .slide.third #tabs img {
+        position: absolute;
+        top: -184px;
+        right: -247px;
+        width: 50%; }
+        @media screen and (min-width: 1366px) {
+          #more-content .slide.third #tabs img {
+            right: -325px; } }
+        @media screen and (min-width: 1920px) {
+          #more-content .slide.third #tabs img {
+            right: -415px;
+            width: 375px; } }
+      #more-content .slide.third #tabs #tab-2 img, #more-content .slide.third #tabs #tab-3 img {
+        top: -157px; }
   @media screen and (min-width: 1800px) {
     #more-content #top-nav {
       top: 20px; } }

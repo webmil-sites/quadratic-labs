@@ -1,5 +1,5 @@
 
-var s12 = Snap( $('.slider-for-index .third svg.bottom')[0] );
+var s12 = Snap( $('.slider-for-index .third .description svg.bottom')[0] );
 var sWidth3 = 1500;
 var sHeight3 = 300;
 
@@ -27,7 +27,7 @@ setInterval(function(){
   };
 },speed);
 ////////////////////////////////////////////////////////////////////////////////////////
-var s13 = Snap( $('.slider-for-index .third svg.bottom')[1] );
+var s13 = Snap( $('.slider-for-index .third .description svg.bottom')[1] );
 
 var line13 = s13.selectAll( 'line' );
 
@@ -53,7 +53,7 @@ setInterval(function(){
   };
 },speed);
 /////////////////////////////////////////////////////////////////////////////////////////
-var s14 = Snap( $('.slider-for-index .third svg.bottom')[2] );
+var s14 = Snap( $('.slider-for-index .third .description svg.bottom')[2] );
 
 var line14 = s14.selectAll( 'line' );
 
@@ -79,7 +79,7 @@ setInterval(function(){
   };
 },speed);
 ///////////////////////////////////////////////////////////////////////////////////////
-var s15 = Snap( $('.slider-for-index .third svg.bottom')[3] );
+var s15 = Snap( $('.slider-for-index .third .description svg.bottom')[3] );
 
 var line15 = s15.selectAll( 'line' );
 

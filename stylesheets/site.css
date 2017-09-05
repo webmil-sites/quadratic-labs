@@ -628,17 +628,6 @@ ul {
       font-weight: 400; }
     #index-content .description p {
       padding: 0 10%; }
-    #index-content .description #anchor {
-      position: relative; }
-      #index-content .description #anchor:before {
-        content: '';
-        position: absolute;
-        top: 10px;
-        left: 0px;
-        height: 10px;
-        width: 10px;
-        border: 1px solid #fff;
-        border-radius: 50%; }
     @media only screen and (width: 1024px) and (orientation: landscape) {
       #index-content .description {
         bottom: -20px; } }
@@ -655,7 +644,7 @@ ul {
   #index-content .slide svg {
     position: absolute;
     display: none; }
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 1366px) {
       #index-content .slide svg {
         display: inline-block; } }
   #index-content .slide.first svg.top {
@@ -667,11 +656,18 @@ ul {
     height: 300px; } }
   #index-content .slide.first svg.bottom {
     top: -145px;
-    left: 25%; }
+    left: 9%; }
 @-moz-document url-prefix() {
   #index-content .slide.first svg.bottom {
     width: 300px;
     height: 200px; } }
+  @media screen and (min-width: 1920px) {
+    #index-content .slide.first svg.top {
+      top: 0;
+      left: 35%; }
+    #index-content .slide.first svg.bottom {
+      top: -145px;
+      left: 25%; } }
   #index-content .slide.second svg.top {
     left: 44%; }
 @-moz-document url-prefix() {
@@ -682,13 +678,26 @@ ul {
     font-size: 32px; }
   #index-content .slide.third .margin {
     margin: 0 20px; }
-  #index-content .slide.third svg.bottom {
+  #index-content .slide.third > svg.bottom {
+    top: 0px;
+    right: 30%; }
+@-moz-document url-prefix() {
+  #index-content .slide.third > svg.bottom {
+    width: 300px;
+    height: 200px; } }
+    @media screen and (min-width: 1920px) {
+      #index-content .slide.third > svg.bottom {
+        display: none; } }
+  #index-content .slide.third .description svg.bottom {
     top: -200px;
     left: -35px; }
 @-moz-document url-prefix() {
-  #index-content .slide.third svg.bottom {
+  #index-content .slide.third .description svg.bottom {
     width: 1500px;
     height: 300px; } }
+    @media screen and (min-width: 1366px) and (max-width: 1919px) {
+      #index-content .slide.third .description svg.bottom {
+        display: none; } }
   #index-content .slide.third .inner div {
     display: inline-block;
     width: 60%;
@@ -735,7 +744,7 @@ ul {
     #team-content .member-details svg {
       position: absolute;
       display: none; }
-      @media screen and (min-width: 1920px) {
+      @media screen and (min-width: 1366px) {
         #team-content .member-details svg {
           display: inline-block; } }
     #team-content .member-details .slide {
@@ -818,15 +827,15 @@ ul {
             padding: 0; }
             #team-content .member-details .slide .details .hobbies ul li {
               margin: 10px 0; }
-              @media screen and (min-width: 1200px) {
-                #team-content .member-details .slide .details .hobbies ul li {
-                  margin: 12px 0; } }
-              @media screen and (min-width: 1400px) {
-                #team-content .member-details .slide .details .hobbies ul li {
-                  margin: 15px 0; } }
-              @media screen and (min-width: 1800px) {
+              @media screen and (min-width: 1366px) {
                 #team-content .member-details .slide .details .hobbies ul li {
                   margin: 28px 0; } }
+          @media screen and (min-width: 1366px) {
+            #team-content .member-details .slide .details .hobbies {
+              width: 100%; }
+              #team-content .member-details .slide .details .hobbies img {
+                width: 180px;
+                margin-right: 75px; } }
         #team-content .member-details .slide .details p {
           max-height: 60px;
           margin-top: 10px;
@@ -835,12 +844,7 @@ ul {
           font-style: italic; }
         @media screen and (min-width: 1920px) {
           #team-content .member-details .slide .details {
-            width: 50%; }
-            #team-content .member-details .slide .details .hobbies img {
-              width: 180px;
-              margin-right: 75px; }
-            #team-content .member-details .slide .details .hobbies ul {
-              width: 180px; } }
+            width: 50%; } }
         @media screen and (min-width: 2100px) {
           #team-content .member-details .slide .details {
             width: 54%; } }
@@ -1098,6 +1102,9 @@ ul {
       @media screen and (min-width: 1900px) {
         #more-content .about section {
           margin-bottom: 60px; } }
+  @media screen and (max-width: 1919px) {
+    #more-content .slick-slider {
+      height: calc(100% - 20px); } }
   #more-content .slick-slider .slick-list,
   #more-content .slick-slider .slick-track {
     height: 100%; }
@@ -1145,12 +1152,12 @@ ul {
     #more-content .slide svg {
       position: absolute;
       display: none; }
-      @media screen and (min-width: 1920px) {
+      @media screen and (min-width: 1366px) {
         #more-content .slide svg {
           display: inline-block; } }
     #more-content .slide.first svg.top {
-      top: 6px;
-      left: 15%; }
+      top: 0;
+      left: 9%; }
 @-moz-document url-prefix() {
   #more-content .slide.first svg.top {
     width: 300px;
@@ -1162,8 +1169,12 @@ ul {
   #more-content .slide.first svg.bottom {
     width: 1200px;
     height: 300px; } }
+    @media screen and (min-width: 1920px) {
+      #more-content .slide.first svg.top {
+        top: 6px;
+        left: 15%; } }
     #more-content .slide.second svg.top {
-      top: 8px;
+      top: 0;
       left: 33%; }
 @-moz-document url-prefix() {
   #more-content .slide.second svg.top {
@@ -1176,6 +1187,9 @@ ul {
   #more-content .slide.second svg.bottom {
     width: 1200px;
     height: 300px; } }
+    @media screen and (min-width: 1920px) {
+      #more-content .slide.second svg.top {
+        top: 8px; } }
     #more-content .slide.second h3:first-child {
       position: relative;
       display: inline-block;
@@ -1220,19 +1234,31 @@ ul {
       #more-content .slide.second .item img {
         display: inline-block; }
     #more-content .slide.third #tab-1 svg.bottom {
-      right: -149%;
-      bottom: 315px; }
+      left: -55px;
+      bottom: -200px; }
 @-moz-document url-prefix() {
   #more-content .slide.third #tab-1 svg.bottom {
     width: 1200px;
     height: 300px; } }
+      @media screen and (min-width: 1920px) {
+        #more-content .slide.third #tab-1 svg.bottom {
+          left: auto;
+          right: -149%;
+          bottom: 315px; } }
     #more-content .slide.third #tab-2 svg.bottom {
-      right: -70%;
-      bottom: 295px; }
+      right: -52%;
+      bottom: -200px; }
 @-moz-document url-prefix() {
   #more-content .slide.third #tab-2 svg.bottom {
     width: 400px;
     height: 500px; } }
+      @media screen and (min-width: 1500px) {
+        #more-content .slide.third #tab-2 svg.bottom {
+          right: -43%; } }
+      @media screen and (min-width: 1920px) {
+        #more-content .slide.third #tab-2 svg.bottom {
+          right: -70%;
+          bottom: 295px; } }
       @media screen and (min-width: 2500px) {
         #more-content .slide.third #tab-2 svg.bottom {
           right: -56%; } }
@@ -1518,7 +1544,7 @@ ul {
     @media screen and (min-width: 1800px) {
       #contacts #top-nav {
         top: 20px; } }
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: 1920px) {
     #contacts.wrap {
       height: calc(100vh - 60px); } }
   #contacts #main-nav ul {

@@ -582,7 +582,6 @@ ul {
     position: absolute;
     width: 100%;
     margin: 0;
-    margin-left: 45px;
     font-family: "Averta", sans-serif;
     font-weight: 900;
     color: #fff;
@@ -591,19 +590,22 @@ ul {
       #index-content h1, #index-content h2 {
         width: calc(100% - 60px); } }
   #index-content h1 {
-    top: 36%;
+    top: 28%;
     font-size: 60px;
-    letter-spacing: 10px;
-    font-family: "Averta", sans-serif;
-    font-weight: 900; }
+    letter-spacing: 10px; }
+    @media screen and (min-width: 1366px) {
+      #index-content h1 {
+        top: 33.5%; } }
     @media screen and (min-width: 1920px) {
       #index-content h1 {
-        top: 32.7%;
         font-size: 124px; } }
   #index-content h2 {
-    top: 39%;
+    top: 31.4%;
     font-size: 40px;
     letter-spacing: 4px; }
+    @media screen and (min-width: 1366px) {
+      #index-content h2 {
+        top: 37%; } }
     @media screen and (min-width: 1920px) {
       #index-content h2 {
         top: 37.5%;
@@ -780,7 +782,7 @@ ul {
             margin-left: 9%; } }
       #team-content .member-details .slide .details {
         float: left;
-        width: 45%;
+        width: 40%;
         text-align: left; }
         #team-content .member-details .slide .details h2, #team-content .member-details .slide .details h3 {
           margin: 0;

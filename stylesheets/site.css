@@ -289,7 +289,6 @@ body {
 
 .wrap {
   height: 130vh;
-  /*height: calc(100vh - 30px);*/
   margin: 15px 0; }
   @media only screen and (width: 1024px) and (orientation: landscape) {
     .wrap {
@@ -299,9 +298,7 @@ body {
       padding-bottom: 50px; } }
   @media screen and (min-width: 1200px) {
     .wrap {
-      margin: 30px 0; }
-      .wrap#customers-content {
-        height: calc(100vh - 80px); } }
+      margin: 30px 0; } }
 
 h1, h2, h3, h4 {
   font-weight: 400; }
@@ -753,6 +750,13 @@ ul {
       #team-content .member-details .slide.first svg.bottom {
         bottom: 0;
         left: 100px; }
+@-moz-document url-prefix() {
+  #team-content .member-details .slide.first svg.top, #team-content .member-details .slide.first svg.bottom {
+    width: 170px;
+    height: 75px; }
+  #team-content .member-details .slide.first svg.middle {
+    width: 120px;
+    height: 75px; } }
       @media screen and (width: 1024px) {
         #team-content .member-details .slide {
           display: -webkit-box;
@@ -802,7 +806,7 @@ ul {
         #team-content .member-details .slide .details .hobbies {
           position: relative;
           display: inline-block;
-          width: 65%; }
+          width: 75%; }
           #team-content .member-details .slide .details .hobbies img {
             float: left;
             width: 40%;
@@ -1056,11 +1060,9 @@ ul {
   background-size: cover; }
   #more-content #top-nav {
     top: 30px; }
-  #more-content.wrap {
-    /*height: 130vh;*/ }
-    @media screen and (min-width: 1200px) {
-      #more-content.wrap {
-        height: calc(100vh - 60px); } }
+  @media screen and (min-width: 1920px) {
+    #more-content.wrap {
+      height: calc(100vh - 60px); } }
   #more-content #main-nav li:before {
     content: ''; }
   #more-content #bottom-nav {
@@ -1320,6 +1322,9 @@ ul {
         top: 30px; } }
   #customers-content #main-nav ul {
     display: none; }
+  @media screen and (min-width: 1920px) {
+    #customers-content.wrap {
+      height: calc(100vh - 80px); } }
   #customers-content .customers {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -1486,7 +1491,8 @@ ul {
       padding-right: 5%; }
       #customers-content .footer .inner > img {
         float: left;
-        height: 60px; }
+        height: 60px;
+        margin-bottom: 4px; }
       #customers-content .footer .inner p {
         display: inline-block;
         margin-right: 110px; }

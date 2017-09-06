@@ -49,7 +49,7 @@
   }
 
 
-  logo.rotation.x = toRad(35);
-  logo.rotation.y = toRad(45);
+  logo.rotation.x = -toRad(15);
+  logo.rotation.y = 0;
   logo.rotation.z = 0;
 });

@@ -2,12 +2,13 @@ function goBack() {
   window.history.back();
 }
 window.onload=function(){
-  $(".loader").css("opacity", "1");
+  $('.loader').css("opacity", "1");
   setTimeout(function () {
-    $(".loader").css("opacity", "0");
-    $("#side-nav").css("display", "inline-block");
-    $("#top-nav").css("display", "inline-block");
-    $("#bottom-nav").css("display", "inline-block");
+    $('#index-content').css("opacity", "1");
+    $('.loader').css("opacity", "0");
+    $('#side-nav').css("display", "inline-block");
+    $('#top-nav').css("display", "inline-block");
+    $('#bottom-nav').css("display", "inline-block");
     slide0();
   }, 2000);
   setTimeout(function () {

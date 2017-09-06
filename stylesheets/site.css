@@ -262,11 +262,7 @@ body {
     background-color: #0000D8;
     z-index: 9 !important;
     -webkit-transition: all 1s;
-    transition: all 1s;
-    /*img {
-    	width: 70px;
-    	height: 70px;
-    }*/ }
+    transition: all 1s; }
     @media screen and (min-width: 1366px) {
       body .loader {
         display: -webkit-box;
@@ -568,6 +564,8 @@ ul {
 
 #bottom-nav a:after {
   bottom: 0; }
+#bottom-nav p {
+  margin: 0; }
 
 #top-nav {
   left: 100px;
@@ -583,7 +581,8 @@ ul {
   margin: 30px 0;
   background-image: url(../images/dots.png);
   background-size: cover;
-  z-index: 9; }
+  z-index: 9;
+  opacity: 0; }
   @media only screen and (width: 1024px) and (orientation: landscape) {
     #index-content {
       display: inline-block;
@@ -856,6 +855,8 @@ ul {
             float: left;
             width: 40%;
             margin-right: 15%; }
+          #team-content .member-details .slide .details .hobbies svg {
+            display: none; }
           #team-content .member-details .slide .details .hobbies ul {
             display: inline-block;
             width: 45%;
@@ -870,7 +871,7 @@ ul {
             #team-content .member-details .slide .details .hobbies {
               width: 100%; }
               #team-content .member-details .slide .details .hobbies img {
-                display: inline-block;
+                /*display: inline-block;*/
                 width: 180px;
                 margin-right: 75px; } }
         #team-content .member-details .slide .details p {
@@ -1122,17 +1123,20 @@ ul {
   #more-content #main-nav li:before {
     content: ''; }
   #more-content #bottom-nav {
-    left: 22%;
-    bottom: 25px;
+    right: 10%;
+    top: 25px;
     font-weight: 600; }
     #more-content #bottom-nav a:after {
-      height: 35px;
-      bottom: -40px; }
-    #more-content #bottom-nav a:hover:after {
+      top: -50px;
+      bottom: auto;
+      left: auto;
+      right: 0;
       height: 45px; }
+    #more-content #bottom-nav a:hover:after {
+      height: 55px; }
     @media screen and (min-width: 1200px) {
       #more-content #bottom-nav {
-        bottom: 10px; } }
+        top: 20px; } }
   #more-content #slider-nav .slider .slick-slide.slick-current:after {
     animation-name: none;
     -webkit-animation-name: none;
@@ -1173,10 +1177,11 @@ ul {
   #more-content h4 {
     margin-top: 0;
     margin-bottom: 15px;
-    font-size: 16px; }
+    font-size: 21px;
+    font-weight: 600; }
     @media screen and (min-width: 1800px) {
       #more-content h4 {
-        font-size: 24px; } }
+        font-size: 30px; } }
   #more-content p {
     margin: 0;
     line-height: 25px; }
@@ -1505,7 +1510,7 @@ ul {
         #customers-content .customers h4 {
           margin-bottom: 55px; } }
   #customers-content .feedbacks {
-    display: inline-block;
+    display: none;
     margin-bottom: 30px; }
     #customers-content .feedbacks > div {
       width: 75%;
@@ -1635,17 +1640,20 @@ ul {
   #contacts #main-nav ul {
     display: none; }
   #contacts #bottom-nav {
-    bottom: 10px;
-    left: 22%;
+    right: 10%;
+    top: 25px;
     font-weight: 600; }
     #contacts #bottom-nav a:after {
-      height: 35px;
-      bottom: -40px; }
-    #contacts #bottom-nav a:hover:after {
+      top: -50px;
+      bottom: auto;
+      left: auto;
+      right: 0;
       height: 45px; }
-    #contacts #bottom-nav p {
-      margin: 0;
-      line-height: 25px; }
+    #contacts #bottom-nav a:hover:after {
+      height: 55px; }
+    @media screen and (min-width: 1200px) {
+      #contacts #bottom-nav {
+        top: 20px; } }
   #contacts #side-nav .right {
     display: none; }
   #contacts h2 {

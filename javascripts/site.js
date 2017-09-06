@@ -56,7 +56,8 @@ $(document).ready(function(){
     draggable: false,
     swipe: false,
     fade: true,
-    asNavFor: '.slider-nav-team'
+    asNavFor: '.slider-nav-team',
+    mobileFirst: true
   });
 
   $('.slider-nav-team').slick({
@@ -96,4 +97,8 @@ $(document).ready(function(){
     event.preventDefault();
     $('.slider-for-more').slick('slickGoTo', 2);
   });
+});
+
+$(window).on('orientationchange', function() {    
+  $('.slider-nav-team .thumbnail:first-child').trigger("click");
 });

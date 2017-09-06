@@ -887,7 +887,12 @@ ul {
         float: left;
         width: 84%; }
       #team-content .members-list .nav .slick-list {
+        width: 100%;
         padding: 0 !important; }
+        #team-content .members-list .nav .slick-list .slick-track {
+          width: 100% !important;
+          -webkit-transform: none !important;
+                  transform: none !important; }
       #team-content .members-list .nav .thumbnail,
       #team-content .members-list .nav .join {
         float: left;

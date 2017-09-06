@@ -48,4 +48,8 @@
     animateSlide({x: toRad(90), y: 0, z: 0});
   }
 
+
+  logo.rotation.x = toRad(35);
+  logo.rotation.y = toRad(45);
+  logo.rotation.z = 0;
 });

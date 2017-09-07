@@ -278,8 +278,8 @@ body {
 
 .slick-slide {
   position: relative;
-  height: calc(100vh - 110px);
-  min-height: calc(100vh - 110px); }
+  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px); }
   .slick-slide:focus {
     outline: none; }
 
@@ -523,7 +523,7 @@ ul {
 
 #index-content {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 60px);
   margin: 30px 0;
   background-image: url(../images/dots.png);
   background-size: cover;
@@ -536,7 +536,6 @@ ul {
       width: 100%; } }
   @media screen and (min-width: 1920px) {
     #index-content {
-      height: calc(100vh - 60px);
       background-image: url(../images/grid-small-dots.png); } }
   #index-content #side-nav a.left {
     left: -30px; }
@@ -1340,7 +1339,7 @@ ul {
         display: inline-block; }
     #more-content .slide.third #tab-1 svg.bottom {
       left: -55px;
-      bottom: -200px; }
+      bottom: -135px; }
 @-moz-document url-prefix() {
   #more-content .slide.third #tab-1 svg.bottom {
     width: 1200px;
@@ -1380,6 +1379,9 @@ ul {
       background: transparent;
       border: none;
       color: #fff; }
+      @media screen and (min-width: 1366px) and (max-width: 1919px) {
+        #more-content .slide.third #tabs {
+          margin-left: 5%; } }
       @media screen and (min-width: 1920px) {
         #more-content .slide.third #tabs {
           width: 50%; } }
@@ -1685,16 +1687,18 @@ ul {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
+      /*height: calc(100vh - 45px);*/ } }
+  @media screen and (width: 1024px) and (orientation: portrait) {
+    #contacts.wrap {
       height: calc(100vh - 45px); } }
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: 1920px) {
     #contacts.wrap {
       height: calc(100vh - 60px); } }
   #contacts #main-nav ul {
     display: none; }
   #contacts #bottom-nav {
     right: 10%;
-    top: 25px;
-    font-weight: 600; }
+    top: 25px; }
     #contacts #bottom-nav a:after {
       top: -50px;
       bottom: auto;
@@ -1710,6 +1714,9 @@ ul {
     display: none; }
   #contacts h2 {
     margin-left: 16%; }
+    @media only screen and (width: 1024px) and (orientation: landscape) {
+      #contacts h2 {
+        margin-top: 25vh; } }
     @media screen and (min-width: 1920px) {
       #contacts h2 {
         margin-left: 20%; } }
@@ -1747,8 +1754,9 @@ ul {
               font-size: 75%; }
       #contacts .about section:last-child {
         width: calc(47% - 80px);
+        margin-top: -110px;
         padding: 55px 40px;
-        background-color: #0000D8; }
+        /*background-color: $colorBlue;*/ }
         #contacts .about section:last-child > div {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -1808,6 +1816,28 @@ ul {
         #contacts .about section {
           width: 40%; }
           #contacts .about section.question {
-            width: calc(60% - 80px); }
+            margin-top: -175px;
+            /*width: calc(60% - 80px);*/ }
             #contacts .about section.question form {
               width: 60%; } }
+  @media screen and (width: 1024px) and (orientation: portrait) {
+    #contacts h2 {
+      margin-left: 20%;
+      text-align: center; }
+    #contacts .about {
+      width: 100%;
+      margin: 0; }
+      #contacts .about section {
+        float: none;
+        width: 100%; }
+        #contacts .about section:first-child {
+          margin-bottom: 50px; }
+          #contacts .about section:first-child > div {
+            padding-left: 26%; }
+        #contacts .about section:last-child {
+          width: 100%;
+          margin-top: 0;
+          padding: 0; }
+          #contacts .about section:last-child iframe {
+            width: 50% !important;
+            margin: 0 auto; } }

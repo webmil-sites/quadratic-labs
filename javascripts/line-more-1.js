@@ -5,6 +5,16 @@ var sHeight4 = 200;
 
 var line16 = s16.selectAll( 'line' );
 var grafSize4 = sWidth4/line16.length;
+var Color = "#fff";
+
+var lineWidth = .5;
+var speed = 1500;
+easing = mina.easeinout;
+
+function getRandom(){
+  var randomNum;
+  return Math.floor(Math.random()*(200-50)+50);
+};
 
 s16.attr({width:sWidth4,height:sHeight4});
 

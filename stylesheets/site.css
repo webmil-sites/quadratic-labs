@@ -1763,6 +1763,11 @@ ul {
               color: #0cf5fd; }
             #contacts .about section:first-child div a span {
               font-size: 75%; }
+          #contacts .about section:first-child div.location p {
+            width: 75%;
+            margin: 0;
+            margin-left: 11px;
+            font-size: 32px; }
       #contacts .about section:last-child {
         width: calc(47% - 80px);
         margin-top: -110px;

@@ -5,10 +5,20 @@ var sHeight10 = 75;
 
 var line40 = s40.selectAll( 'line' );
 var grafSize10 = sWidth10/line40.length;
+var Color = "#fff";
+
+var lineWidth = .5;
+var speed = 1500;
+easing = mina.easeinout;
 
 function getRandomSmall(){
   var randomNum;
   return Math.floor(Math.random()*55);
+};
+
+function getRandom(){
+  var randomNum;
+  return Math.floor(Math.random()*(200-50)+50);
 };
 
 s40.attr({width:sWidth10,height:sHeight10});

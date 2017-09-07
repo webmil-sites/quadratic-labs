@@ -18,8 +18,6 @@ window.onload=function(){
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    // draggable: false,
-    // swipe: false,
     fade: true,
     asNavFor: '.slider-nav-index',
     pauseOnFocus: false,

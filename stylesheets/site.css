@@ -247,12 +247,14 @@ body {
     left: 0;
     right: 0;
     z-index: 1; }
-    body > div:not(.container) canvas {
+    body > div:not(.container) > canvas {
       width: 100% !important;
       height: 100% !important; }
   body .loader {
     position: absolute;
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -263,11 +265,6 @@ body {
     z-index: 9 !important;
     -webkit-transition: all 1s;
     transition: all 1s; }
-    @media screen and (min-width: 1366px) {
-      body .loader {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; } }
   @media only screen and (width: 1024px) and (orientation: portrait) {
     body {
       font-size: 22px; } }
@@ -754,7 +751,7 @@ ul {
 #team-content {
   position: relative;
   height: 100vh;
-  z-index: 9; }
+  z-index: 5; }
   #team-content #side-nav .left {
     display: none; }
   #team-content .member-details {
@@ -773,18 +770,23 @@ ul {
         width: 70%; } }
     #team-content .member-details .slick-track {
       height: 100%; }
+    #team-content .member-details canvas {
+      display: inline-block !important;
+      width: 150px !important;
+      height: 150px !important;
+      margin-top: -8px; }
     #team-content .member-details svg {
       position: absolute;
       display: none; }
       #team-content .member-details svg.top {
         top: 3px;
-        left: 100px; }
+        left: 90px; }
       #team-content .member-details svg.middle {
         top: 56px;
-        left: 135px; }
+        left: 125px; }
       #team-content .member-details svg.bottom {
         bottom: 0;
-        left: 100px; }
+        left: 90px; }
 @-moz-document url-prefix() {
   #team-content .member-details svg.top, #team-content .member-details svg.bottom {
     width: 170px;
@@ -798,8 +800,40 @@ ul {
     #team-content .member-details .slide {
       height: 100%;
       min-height: auto; }
+      #team-content .member-details .slide:not(.third) li:first-child:before {
+        background-color: #fe0000; }
+      #team-content .member-details .slide:not(.third) li:nth-child(2):before {
+        background-color: #ff6d25; }
+      #team-content .member-details .slide:not(.third) li:last-child:before {
+        background-color: #b51c4f; }
       #team-content .member-details .slide.slick-active {
         left: 0 !important; }
+      #team-content .member-details .slide.main {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        #team-content .member-details .slide.main img {
+          width: 75%;
+          margin: 0; }
+          @media screen and (min-width: 1366px) {
+            #team-content .member-details .slide.main img {
+              margin-top: -40px; } }
+      #team-content .member-details .slide.third svg.top {
+        top: -10px; }
+      #team-content .member-details .slide.third svg.bottom {
+        bottom: -10px; }
+      #team-content .member-details .slide.third li:first-child:before {
+        background-color: #fe0000; }
+      #team-content .member-details .slide.third li:last-child:before {
+        background-color: #ff6d25; }
+      #team-content .member-details .slide.fourth svg.middle {
+        top: 50px; }
+        @media screen and (min-width: 1920px) {
+          #team-content .member-details .slide.fourth svg.middle {
+            top: 53px; } }
       @media screen and (width: 1024px) {
         #team-content .member-details .slide {
           display: -webkit-box;
@@ -829,7 +863,7 @@ ul {
             margin-left: 9%; } }
       #team-content .member-details .slide .details {
         float: left;
-        width: 40%;
+        width: 50%;
         text-align: left; }
         #team-content .member-details .slide .details h2, #team-content .member-details .slide .details h3 {
           margin: 0;
@@ -848,43 +882,77 @@ ul {
               font-size: 36px; } }
         #team-content .member-details .slide .details .hobbies {
           position: relative;
-          display: inline-block;
-          width: 75%; }
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
           #team-content .member-details .slide .details .hobbies img {
             display: none;
             float: left;
             width: 40%;
             margin-right: 15%; }
-          #team-content .member-details .slide .details .hobbies svg {
-            display: none; }
           #team-content .member-details .slide .details .hobbies ul {
             display: inline-block;
-            width: 45%;
-            margin: 0;
-            padding: 0; }
+            margin: 0; }
             #team-content .member-details .slide .details .hobbies ul li {
+              position: relative;
               margin: 10px 0; }
+              #team-content .member-details .slide .details .hobbies ul li:before {
+                content: '';
+                position: absolute;
+                top: 9px;
+                left: -20px;
+                height: 15px;
+                width: 15px;
+                border-radius: 50%; }
+              @media screen and (orientation: landscape) {
+                #team-content .member-details .slide .details .hobbies ul li:before {
+                  top: 3px; } }
               @media screen and (min-width: 1366px) {
                 #team-content .member-details .slide .details .hobbies ul li {
-                  margin: 28px 0; } }
+                  margin: 28px 0; }
+                  #team-content .member-details .slide .details .hobbies ul li:before {
+                    display: none; } }
           @media screen and (min-width: 1366px) {
             #team-content .member-details .slide .details .hobbies {
-              width: 100%; }
-              #team-content .member-details .slide .details .hobbies img {
-                width: 180px;
-                margin-right: 75px; } }
+              width: 100%; } }
         #team-content .member-details .slide .details p {
+          display: none;
           max-height: 60px;
           margin-top: 10px;
           overflow: hidden;
           font-weight: 600;
           font-style: italic; }
+        @media screen and (min-width: 1366px) {
+          #team-content .member-details .slide .details {
+            width: 46%; }
+            #team-content .member-details .slide .details ul {
+              padding-left: 90px; } }
         @media screen and (min-width: 1920px) {
           #team-content .member-details .slide .details {
             width: 50%; } }
         @media screen and (min-width: 2100px) {
           #team-content .member-details .slide .details {
             width: 54%; } }
+      @media screen and (min-width: 1366px) {
+        #team-content .member-details .slide.third .details .hobbies ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          height: 107px; }
+          #team-content .member-details .slide.third .details .hobbies ul li {
+            margin: 0; }
+        #team-content .member-details .slide.fourth .hobbies ul li {
+          margin: 25px 0; } }
   #team-content .members-list {
     position: absolute;
     bottom: 0;
@@ -1015,6 +1083,8 @@ ul {
         width: 20% !important; }
         #team-content .members-list .nav .thumbnail .picture img {
           margin-top: -20px; }
+        #team-content .members-list .nav .thumbnail.hide {
+          display: none; }
       #team-content .members-list .nav .join {
         position: absolute;
         right: -1px;
@@ -1466,8 +1536,6 @@ ul {
     @media screen and (min-width: 1200px) {
       #customers-content #top-nav {
         top: 30px; } }
-  #customers-content #main-nav ul {
-    display: none; }
   #customers-content.wrap {
     height: calc(100vh - 50px); }
     @media screen and (width: 1024px) and (orientation: landscape) {
@@ -1708,8 +1776,6 @@ ul {
   @media screen and (min-width: 1920px) {
     #contacts.wrap {
       height: calc(100vh - 60px); } }
-  #contacts #main-nav ul {
-    display: none; }
   #contacts #bottom-nav {
     right: 10%;
     top: 25px; }

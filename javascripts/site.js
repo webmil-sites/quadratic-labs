@@ -104,6 +104,5 @@ $(document).ready(function(){
 });
 
 $(window).on('orientationchange', function() {    
-  $('.slider-nav-team .thumbnail:first-child').trigger("click");
-  $('.slider-nav-team .thumbnail:first-child').trigger("hover");
+  $('.slider-nav-team .thumbnail.first').trigger("click");
 });

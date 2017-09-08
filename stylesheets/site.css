@@ -606,6 +606,7 @@ ul {
     position: absolute;
     width: 100%;
     margin: 0;
+    padding-left: 40px;
     font-family: "Averta", sans-serif;
     font-weight: 900;
     color: #fff;
@@ -866,7 +867,6 @@ ul {
             #team-content .member-details .slide .details .hobbies {
               width: 100%; }
               #team-content .member-details .slide .details .hobbies img {
-                /*display: inline-block;*/
                 width: 180px;
                 margin-right: 75px; } }
         #team-content .member-details .slide .details p {
@@ -1697,8 +1697,7 @@ ul {
               flex-direction: column;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center;
-      /*height: calc(100vh - 45px);*/ } }
+              justify-content: center; } }
   @media screen and (width: 1024px) and (orientation: portrait) {
     #contacts.wrap {
       height: calc(100vh - 45px); } }
@@ -1724,7 +1723,8 @@ ul {
   #contacts #side-nav .right {
     display: none; }
   #contacts h2 {
-    margin-left: 16%; }
+    margin-left: 16%;
+    margin-bottom: 20px; }
     @media only screen and (width: 1024px) and (orientation: landscape) {
       #contacts h2 {
         margin-top: 25vh; } }
@@ -1736,11 +1736,11 @@ ul {
     width: 87%;
     margin-left: 13%; }
     #contacts .about section {
-      float: left;
+      float: right;
       width: 53%; }
-      #contacts .about section:first-child {
-        padding-top: 55px; }
-        #contacts .about section:first-child div {
+      #contacts .about section:last-child {
+        padding-top: 35px; }
+        #contacts .about section:last-child div {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -1748,83 +1748,43 @@ ul {
               -ms-flex-align: center;
                   align-items: center;
           margin-bottom: 30px; }
-          #contacts .about section:first-child div.phone img {
-            margin-left: 10px; }
-          #contacts .about section:first-child div.phone a {
-            margin-left: 25px; }
-          #contacts .about section:first-child div a {
-            margin-left: 15px;
-            font-size: 32px;
-            text-decoration: none;
-            color: #fff;
-            -webkit-transition: all 0.3s;
-            transition: all 0.3s; }
-            #contacts .about section:first-child div a:hover, #contacts .about section:first-child div a:focus {
-              color: #0cf5fd; }
-            #contacts .about section:first-child div a span {
-              font-size: 75%; }
-          #contacts .about section:first-child div.location p {
-            width: 75%;
-            margin: 0;
-            margin-left: 11px;
-            font-size: 32px; }
-      #contacts .about section:last-child {
+        #contacts .about section:last-child a {
+          margin: 0 auto;
+          font-size: 32px;
+          text-decoration: none;
+          color: #fff;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s; }
+          #contacts .about section:last-child a:hover, #contacts .about section:last-child a:focus {
+            color: #0cf5fd; }
+        #contacts .about section:last-child p {
+          width: 100%;
+          margin: 0;
+          font-size: 32px;
+          text-align: center; }
+      #contacts .about section:first-child {
         width: calc(47% - 80px);
         margin-top: -110px;
-        padding: 55px 40px;
-        /*background-color: $colorBlue;*/ }
-        #contacts .about section:last-child > div {
+        padding: 55px 40px; }
+        #contacts .about section:first-child > div {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center;
-          margin-bottom: 20px; }
-          #contacts .about section:last-child > div h3 {
+          padding-bottom: 20px; }
+          #contacts .about section:first-child > div h3 {
             margin: 0;
             margin-left: 15px;
             font-size: 32px; }
-        #contacts .about section:last-child form {
-          width: 100%; }
-          #contacts .about section:last-child form .name,
-          #contacts .about section:last-child form .email {
-            position: relative; }
-            #contacts .about section:last-child form .name:before,
-            #contacts .about section:last-child form .email:before {
-              content: "*";
-              position: absolute;
-              top: 19px;
-              right: 25px; }
-            #contacts .about section:last-child form .name:after,
-            #contacts .about section:last-child form .email:after {
-              content: url(../images/valid.png);
-              position: absolute;
-              display: none;
-              top: 13px;
-              right: 22px; }
-          #contacts .about section:last-child form .form-control {
-            position: relative;
-            width: calc(100% - 32px); }
-          #contacts .about section:last-child form textarea {
-            height: 75px;
-            resize: none; }
-          #contacts .about section:last-child form button {
-            float: right;
-            padding: 15px 70px;
-            font-size: 16px;
-            font-weight: 600;
-            font-family: "OpenSans", sans-serif;
-            text-transform: uppercase;
-            background-color: #0cf5fd;
-            color: #0000D8;
-            border: none;
-            letter-spacing: 7px;
-            cursor: pointer;
-            -webkit-transition: all 0.3s;
-            transition: all 0.3s; }
-            #contacts .about section:last-child form button:hover, #contacts .about section:last-child form button:focus {
-              background-color: #02d2d9; }
+      @media screen and (min-width: 1366px) {
+        #contacts .about section {
+          width: 46%; }
+          #contacts .about section:last-child p {
+            text-align: left; }
+          #contacts .about section:last-child a {
+            margin: 0; } }
     @media screen and (min-width: 1920px) {
       #contacts .about {
         width: 81%;
@@ -1832,10 +1792,8 @@ ul {
         #contacts .about section {
           width: 40%; }
           #contacts .about section.question {
-            margin-top: -175px;
-            /*width: calc(60% - 80px);*/ }
-            #contacts .about section.question form {
-              width: 60%; } }
+            margin-top: -145px;
+            width: calc(60% - 80px); } }
   @media screen and (width: 1024px) and (orientation: portrait) {
     #contacts h2 {
       margin-left: 20%;
@@ -1846,14 +1804,14 @@ ul {
       #contacts .about section {
         float: none;
         width: 100%; }
-        #contacts .about section:first-child {
+        #contacts .about section:flast-child {
           margin-bottom: 50px; }
-          #contacts .about section:first-child > div {
+          #contacts .about section:flast-child > div {
             padding-left: 26%; }
-        #contacts .about section:last-child {
+        #contacts .about section:first-child {
           width: 100%;
           margin-top: 0;
           padding: 0; }
-          #contacts .about section:last-child iframe {
+          #contacts .about section:first-child iframe {
             width: 50% !important;
             margin: 0 auto; } }

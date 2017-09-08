@@ -611,6 +611,9 @@ ul {
     font-weight: 900;
     color: #fff;
     text-align: center; }
+    @media screen and (width: 1024px) {
+      #index-content h1, #index-content h2 {
+        padding-left: 0; } }
     @media screen and (min-width: 1200px) {
       #index-content h1, #index-content h2 {
         width: calc(100% - 60px); } }
@@ -750,7 +753,8 @@ ul {
 
 #team-content {
   position: relative;
-  height: 100vh; }
+  height: 100vh;
+  z-index: 9; }
   #team-content #side-nav .left {
     display: none; }
   #team-content .member-details {

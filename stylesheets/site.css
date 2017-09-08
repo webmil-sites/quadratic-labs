@@ -754,6 +754,20 @@ ul {
   z-index: 5; }
   #team-content #side-nav .left {
     display: none; }
+  #team-content #main-nav {
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    width: 900px;
+    margin-left: -450px;
+    display: none; }
+    @media screen and (min-width: 1366px) {
+      #team-content #main-nav {
+        display: inline-block; } }
+    @media screen and (min-width: 1800px) {
+      #team-content #main-nav {
+        width: 1150px;
+        margin-left: -575px; } }
   #team-content .member-details {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1536,6 +1550,20 @@ ul {
     @media screen and (min-width: 1200px) {
       #customers-content #top-nav {
         top: 30px; } }
+  #customers-content #main-nav {
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    width: 900px;
+    margin-left: -450px;
+    display: none; }
+    @media screen and (min-width: 1366px) {
+      #customers-content #main-nav {
+        display: inline-block; } }
+    @media screen and (min-width: 1800px) {
+      #customers-content #main-nav {
+        width: 1150px;
+        margin-left: -575px; } }
   #customers-content.wrap {
     height: calc(100vh - 50px); }
     @media screen and (width: 1024px) and (orientation: landscape) {
@@ -1776,6 +1804,20 @@ ul {
   @media screen and (min-width: 1920px) {
     #contacts.wrap {
       height: calc(100vh - 60px); } }
+  #contacts #main-nav {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    width: 900px;
+    margin-left: -450px;
+    display: none; }
+    @media screen and (min-width: 1366px) {
+      #contacts #main-nav {
+        display: inline-block; } }
+    @media screen and (min-width: 1800px) {
+      #contacts #main-nav {
+        width: 1150px;
+        margin-left: -575px; } }
   #contacts #bottom-nav {
     right: 10%;
     top: 25px; }
@@ -1798,6 +1840,9 @@ ul {
     @media only screen and (width: 1024px) and (orientation: landscape) {
       #contacts h2 {
         margin-top: 25vh; } }
+    @media screen and (min-width: 1200px) {
+      #contacts h2 {
+        margin-top: 65px; } }
     @media screen and (min-width: 1920px) {
       #contacts h2 {
         margin-left: 20%; } }

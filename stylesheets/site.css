@@ -834,7 +834,11 @@ ul {
           margin: 0; }
           @media screen and (min-width: 1366px) {
             #team-content .member-details .slide.main img {
+              width: 60%;
               margin-top: -40px; } }
+          @media screen and (min-width: 1920px) {
+            #team-content .member-details .slide.main img {
+              width: 75%; } }
       #team-content .member-details .slide.third svg.top {
         top: -10px; }
       #team-content .member-details .slide.third svg.bottom {
@@ -1282,7 +1286,7 @@ ul {
       #more-content #slider-nav {
         padding-top: 20px; } }
   #more-content h2 {
-    margin: 6% 20% 20px 20%; }
+    margin: 3% 20% 20px 20%; }
     @media screen and (min-width: 1900px) {
       #more-content h2 {
         margin: 9% 20% 20px 20%; } }
@@ -1403,10 +1407,6 @@ ul {
       #more-content .slide.second h3:first-child:after {
         content: url("../images/right-bracket.png");
         right: -14px; }
-      @media screen and (min-width: 1200px) {
-        #more-content .slide.second h3:first-child {
-          margin: 35px 20% 35px 0;
-          letter-spacing: 4px; } }
       @media screen and (min-width: 1600px) {
         #more-content .slide.second h3:first-child {
           margin: 120px 20% 30px 0; } }
@@ -1415,15 +1415,25 @@ ul {
           top: 3px; } }
     #more-content .slide.second p {
       width: 70%;
-      margin-bottom: 35px; }
+      margin-bottom: 25px; }
+      @media screen and (min-width: 1900px) {
+        #more-content .slide.second p {
+          margin-bottom: 35px; } }
     #more-content .slide.second ul {
-      margin-bottom: 65px; }
+      margin-bottom: 20px; }
       @media screen and (min-width: 1900px) {
         #more-content .slide.second ul {
           margin-bottom: 100px; } }
-    #more-content .slide.second .about > div {
-      width: 75%;
-      padding-top: 50px; }
+    #more-content .slide.second .about {
+      margin-top: 20px; }
+      #more-content .slide.second .about > div {
+        width: 75%;
+        padding-top: 30px; }
+      @media screen and (min-width: 1900px) {
+        #more-content .slide.second .about {
+          margin-top: 0; }
+          #more-content .slide.second .about > div {
+            padding-top: 50px; } }
     #more-content .slide.second .item {
       position: relative;
       display: inline-block;
@@ -1434,8 +1444,8 @@ ul {
       #more-content .slide.second .item img {
         display: inline-block; }
     #more-content .slide.third #tab-1 svg.bottom {
-      left: -55px;
-      bottom: -135px; }
+      left: -89px;
+      bottom: -77px; }
 @-moz-document url-prefix() {
   #more-content .slide.third #tab-1 svg.bottom {
     width: 1200px;
@@ -1447,7 +1457,7 @@ ul {
           bottom: 315px; } }
     #more-content .slide.third #tab-2 svg.bottom {
       right: -52%;
-      bottom: -200px; }
+      bottom: -100px; }
 @-moz-document url-prefix() {
   #more-content .slide.third #tab-2 svg.bottom {
     width: 400px;

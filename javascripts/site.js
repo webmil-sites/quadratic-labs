@@ -35,6 +35,12 @@ window.onload=function(){
   });
 
   var slideNumber = document.location.hash ? parseInt(document.location.hash[1]) : 0;
+  if (slideNumber == 3) {
+    console.log("!!!");
+    $('.slick-slide').eq(2).click();
+    $('a[href="#tab-2"]').click();
+  }
+
   $('.slick-slide').eq(slideNumber).click();
 };
 
@@ -80,14 +86,6 @@ $(document).ready(function(){
   $( function() {
     $( "#tabs" ).tabs();
   } );
-
-  var moreLink = $('.js-more');
-  var moreHref = moreLink.prop('href');
-
-  $('.slider-for-index').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-    window['slide' + nextSlide]()
-    moreLink.prop('href', moreHref + '#' + nextSlide)
-  });
 
   $(document).on('click', '#more-content #main-nav .first', function(event){
     event.preventDefault();

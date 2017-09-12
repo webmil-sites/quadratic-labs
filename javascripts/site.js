@@ -3,9 +3,10 @@ window.onload=function(){
   setTimeout(function () {
     $('#index-content').css("opacity", "1");
     $('.loader').css("opacity", "0");
-    $('#side-nav').css("display", "inline-block");
-    $('#top-nav').css("display", "inline-block");
-    $('#bottom-nav').css("display", "inline-block");
+    if ($('body').width() > 1023) {
+      $('#side-nav').css("display", "inline-block");
+      $('#top-nav').css("display", "inline-block");
+    }
     slide0();
   }, 2000);
   setTimeout(function () {
@@ -34,9 +35,17 @@ window.onload=function(){
     pauseOnHover: false
   });
 
+  var moreLink = $('.js-more');
+  var moreHref = moreLink.prop('href');
+
+  $('.slider-for-index').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    window['slide' + nextSlide]()
+    moreLink.prop('href', moreHref + '#' + nextSlide)
+  });
+
+
   var slideNumber = document.location.hash ? parseInt(document.location.hash[1]) : 0;
   if (slideNumber == 3) {
-    console.log("!!!");
     $('.slick-slide').eq(2).click();
     $('a[href="#tab-2"]').click();
   }
@@ -86,6 +95,16 @@ $(document).ready(function(){
   $( function() {
     $( "#tabs" ).tabs();
   } );
+
+  $(document).on('click', '#mobile-nav .open', function(event){
+    event.preventDefault();
+    $('#mobile-nav .menu').addClass('opened');
+  });
+
+  $(document).on('click', '#mobile-nav .menu .close', function(event){
+    event.preventDefault();
+    $('#mobile-nav .menu').removeClass('opened');
+  });
 
   $(document).on('click', '#more-content #main-nav .first', function(event){
     event.preventDefault();

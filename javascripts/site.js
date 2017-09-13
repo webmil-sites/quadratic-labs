@@ -14,7 +14,7 @@ window.onload=function(){
   }, 3000);
   $('.slider-for-index').slick({
     autoplay: true,
-    autoplaySpeed: 8500,
+    autoplaySpeed: 7500,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,

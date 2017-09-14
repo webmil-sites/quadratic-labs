@@ -241,14 +241,17 @@ body {
     display: none; }
   body > div:not(.container) {
     position: absolute;
-    top: -45%;
+    top: -24%;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 1; }
     body > div:not(.container) > canvas {
       width: 100% !important;
-      height: 100% !important; }
+      height: 85% !important; }
+      @media screen and (min-width: 1024px) {
+        body > div:not(.container) > canvas {
+          height: 100% !important; } }
     body > div:not(.container).loader {
       position: fixed;
       top: 0;
@@ -662,7 +665,7 @@ ul {
     right: 0; } }
   #index-content #slider-nav {
     position: absolute;
-    bottom: 10px;
+    bottom: -10px;
     left: 50%;
     width: 260px;
     height: 11px;
@@ -730,6 +733,8 @@ ul {
       margin: 0;
       font-size: 14px;
       font-weight: 400; }
+    #index-content .description p {
+      line-height: 12px; }
   #index-content .slide svg {
     position: absolute;
     display: none; }
@@ -790,7 +795,6 @@ ul {
     #index-content .slide.third .inner div a {
       position: relative;
       display: inline-block;
-      margin-bottom: 5px;
       color: #fff;
       -webkit-transition: all 0.3s;
       transition: all 0.3s; }
@@ -810,7 +814,7 @@ ul {
     #index-content {
       background-image: url(../images/grid-small-mobile-landscape.png); }
       #index-content .slide .description {
-        bottom: -5px; }
+        bottom: 0px; }
       #index-content .slide.second .description p {
         margin-top: 5px; }
       #index-content .slide.third .description .inner div {
@@ -818,6 +822,8 @@ ul {
         #index-content .slide.third .description .inner div:first-child {
           margin-right: 4%; } }
   @media screen and (min-width: 660px) {
+    #index-content #slider-nav {
+      bottom: 10px; }
     #index-content .slide .description {
       bottom: 18px; } }
   @media screen and (min-width: 768px) {
@@ -835,6 +841,10 @@ ul {
       height: 200px; }
       #index-content .slide .description h3 {
         font-size: 32px; }
+      #index-content .slide .description p {
+        line-height: 24px; }
+    #index-content .slide.third a {
+      margin-bottom: 5px; }
     #index-content #slider-nav {
       bottom: -10px; } }
   @media screen and (min-width: 1024px) {
@@ -852,7 +862,10 @@ ul {
           line-height: 25px; } }
   @media screen and (min-width: 1366px) and (max-width: 1681px) {
     #index-content {
-      background-position-y: -175px; } }
+      background-image: url("../images/dots.png"); }
+      #index-content .slide .description {
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.2); } }
   @media screen and (min-width: 1920px) {
     #index-content {
       background-position-y: 100%; }
@@ -2213,18 +2226,63 @@ ul {
         width: calc(47% - 80px);
         margin-top: -110px;
         padding: 55px 40px; }
-        #contacts .about section:first-child > div {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          padding-bottom: 20px; }
-          #contacts .about section:first-child > div h3 {
-            margin: 0;
-            margin-left: 15px;
-            font-size: 32px; }
+        #contacts .about section:first-child .form {
+          display: none; }
+          #contacts .about section:first-child .form > div {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            padding-bottom: 20px; }
+            #contacts .about section:first-child .form > div h3 {
+              margin: 0;
+              margin-left: 15px;
+              font-size: 32px; }
+        #contacts .about section:first-child form {
+          width: 100%; }
+          #contacts .about section:first-child form .name,
+          #contacts .about section:first-child form .email,
+          #contacts .about section:first-child form .organization {
+            position: relative; }
+            #contacts .about section:first-child form .name:before,
+            #contacts .about section:first-child form .email:before,
+            #contacts .about section:first-child form .organization:before {
+              content: "*";
+              position: absolute;
+              top: 19px;
+              right: 25px; }
+            #contacts .about section:first-child form .name:after,
+            #contacts .about section:first-child form .email:after,
+            #contacts .about section:first-child form .organization:after {
+              content: url(../images/valid.png);
+              position: absolute;
+              display: none;
+              top: 13px;
+              right: 22px; }
+          #contacts .about section:first-child form .form-control {
+            position: relative;
+            width: calc(100% - 32px); }
+          #contacts .about section:first-child form textarea {
+            height: 75px;
+            resize: none; }
+          #contacts .about section:first-child form button {
+            float: right;
+            padding: 15px 70px;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: "OpenSans", sans-serif;
+            text-transform: uppercase;
+            background-color: #0cf5fd;
+            color: #0000D8;
+            border: none;
+            letter-spacing: 7px;
+            cursor: pointer;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s; }
+            #contacts .about section:first-child form button:hover, #contacts .about section:first-child form button:focus {
+              background-color: #02d2d9; }
       @media screen and (min-width: 1366px) {
         #contacts .about section {
           width: 50%; }
@@ -2243,7 +2301,8 @@ ul {
             width: calc(60% - 80px); } }
   @media screen and (max-width: 1023px) {
     #contacts {
-      padding-bottom: 20px; }
+      padding-bottom: 20px;
+      background-image: url("../images/grid-mobile-large-portrait.png"); }
       #contacts h2 {
         width: 100%;
         margin: 0;

@@ -5,7 +5,8 @@
     camera.top = top;
     camera.bottom = -top;
 
-    if (this.width < 900) {
+    if (window.innerWidth < 900) {
+      debugger
       camera.zoom = 1.7;
     }
     

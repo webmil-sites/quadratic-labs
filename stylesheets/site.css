@@ -446,7 +446,7 @@ ul {
   position: absolute;
   top: 0;
   left: 5px;
-  z-index: 9; }
+  z-index: 9999999; }
   #mobile-nav button {
     padding: 0;
     background: none;

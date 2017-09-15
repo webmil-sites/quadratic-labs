@@ -1969,6 +1969,7 @@ ul {
       #customers-content .customers h4:before, #customers-content .customers h4:after {
         position: absolute;
         top: -25px;
+        color: #fe0000;
         font-size: 50px; }
       #customers-content .customers h4:before {
         content: '[';

@@ -1981,7 +1981,8 @@ ul {
       #customers-content .customers h4:before, #customers-content .customers h4:after {
         position: absolute;
         top: -25px;
-        font-size: 50px; }
+        font-size: 50px;
+        color: #fe0000; }
       #customers-content .customers h4:before {
         content: '[';
         left: -20px; }

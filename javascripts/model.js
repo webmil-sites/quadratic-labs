@@ -4,6 +4,11 @@
     var top = (camera.right - camera.left) / koef / 2;
     camera.top = top;
     camera.bottom = -top;
+
+    if (window.innerWidth < 900) {
+      camera.zoom = 1.7;
+    }
+    
     camera.updateProjectionMatrix();
   }
 

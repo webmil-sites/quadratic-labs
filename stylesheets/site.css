@@ -497,6 +497,7 @@ ul {
     #mobile-nav .menu a {
       font-family: "Averta", sans-serif;
       font-weight: 600;
+      font-size: 18px;
       text-decoration: none;
       color: #0000D8; }
     #mobile-nav .menu.opened {
@@ -507,7 +508,7 @@ ul {
       #mobile-nav .menu ul {
         margin-top: 0; }
         #mobile-nav .menu ul li {
-          margin-bottom: 23px; }
+          margin-bottom: 18px; }
       #mobile-nav .menu .language {
         margin-bottom: 0; } }
   @media only screen and (min-width: 660px) {

@@ -449,7 +449,7 @@ ul {
   position: absolute;
   top: 0;
   left: 5px;
-  z-index: 9999999; }
+  z-index: 9; }
   #mobile-nav button {
     display: inline-block;
     margin-bottom: 15px;
@@ -485,7 +485,7 @@ ul {
       padding-left: 30px; }
       #mobile-nav .menu ul li {
         position: relative;
-      }
+        margin-bottom: 25px; }
         #mobile-nav .menu ul li:before {
           content: '';
           position: absolute;
@@ -1981,8 +1981,8 @@ ul {
       #customers-content .customers h4:before, #customers-content .customers h4:after {
         position: absolute;
         top: -25px;
-        color: #fe0000;
-        font-size: 50px; }
+        font-size: 50px;
+        color: #fe0000; }
       #customers-content .customers h4:before {
         content: '[';
         left: -20px; }

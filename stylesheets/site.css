@@ -485,14 +485,14 @@ ul {
       font-weight: 600;
       text-decoration: none;
       color: #0000D8; }
-    #mobile-nav .menu .language {
+    #mobile-nav .menu .language-mobile {
       margin-left: 30px;
       margin-bottom: 30px; }
-      #mobile-nav .menu .language a {
+      #mobile-nav .menu .language-mobile a {
         margin-right: 35px;
         padding: 0 20px 7px 0;
         border-bottom: 2px solid transparent; }
-        #mobile-nav .menu .language a.active {
+        #mobile-nav .menu .language-mobile a.active {
           border-bottom-color: #fe0000; }
     #mobile-nav .menu.opened {
       left: -20px; }

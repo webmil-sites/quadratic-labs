@@ -106,6 +106,16 @@ $(document).ready(function(){
     $('#mobile-nav .menu').removeClass('opened');
   });
 
+  $(document).on('click', '#mobile-nav .solve', function(event){
+    $('.slider-for-more').slick('slickGoTo', 0);
+  });
+  $(document).on('click', '#mobile-nav .what', function(event){
+    $('.slider-for-more').slick('slickGoTo', 1);
+  });
+  $(document).on('click', '#mobile-nav .products', function(event){
+    $('.slider-for-more').slick('slickGoTo', 2);
+  });
+
   $(document).on('click', '#more-content #main-nav .first', function(event){
     event.preventDefault();
     $('.slider-for-more').slick('slickGoTo', 0);

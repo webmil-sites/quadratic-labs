@@ -46,14 +46,15 @@ $(document).ready(function () {
     moreLink.prop('href', moreHref + '#' + nextSlide)
   });
 
-
   var slideNumber = document.location.hash ? parseInt(document.location.hash[1]) : 0;
-  if (slideNumber == 3) {
-    $('.slick-slide').eq(2).click();
-    $('a[href="#tab-2"]').click();
-  }
+  setTimeout(function () {
+    if (slideNumber == 3) {
+      $('.slick-slide').eq(2).click();
+      $('a[href="#tab-2"]').click();
+    }
+    $('.slick-slide').eq(slideNumber).click();
+  }, 100);
 
-  $('.slick-slide').eq(slideNumber).click();
 
   $('.slider-nav-index').slick({
     slidesToShow: 3,

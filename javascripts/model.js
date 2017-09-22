@@ -8,7 +8,7 @@
     if (window.innerWidth < 900) {
       camera.zoom = 1.7;
     }
-    
+
     camera.updateProjectionMatrix();
   }
 
@@ -41,20 +41,15 @@
   }
 
   window.slide0 = function slide0() {
-    animateSlide({x: 0, y: 0, z: 0});
+    animateSlide({x: toRad(35), y: toRad(45), z: 0});
   }
 
 
   window.slide1 = function slide1() {
-    animateSlide({x: toRad(35), y: toRad(45), z: 0});
+    animateSlide({ x: 0, y: 0, z: 0 });
   }
 
   window.slide2 = function slide2() {
     animateSlide({x: toRad(90), y: 0, z: 0});
   }
-
-
-  logo.rotation.x = -toRad(15);
-  logo.rotation.y = 0;
-  logo.rotation.z = 0;
 });

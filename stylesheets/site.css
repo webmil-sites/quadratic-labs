@@ -1260,12 +1260,16 @@ ul {
         width: 100%;
         padding-left: 0; }
         #team-content .members-list .nav .thumbnail .picture > img {
-          margin-top: -9px; }
+          margin-top: -5px; }
         #team-content .members-list .nav .thumbnail:nth-child(3) .picture > img {
-          margin-top: -5px; } }
+          margin-top: -10px; } }
   @media screen and (min-width: 1024px) {
     #team-content .member-details .slide.main img {
-      width: 70%; } }
+      width: 70%; }
+    #team-content .members-list .nav .thumbnail .picture > img {
+      margin-top: -10px; }
+    #team-content .members-list .nav .thumbnail:nth-child(3) .picture > img {
+      margin-top: -17px; } }
   @media screen and (min-width: 1366px) {
     #team-content #main-nav {
       display: inline-block; }
@@ -1316,8 +1320,8 @@ ul {
           width: 30px;
           margin-top: -12px;
           margin-left: -15px; }
-      #team-content .members-list .nav .thumbnail:nth-child(3) .picture img {
-        margin-top: -5px; }
+      #team-content .members-list .nav .thumbnail:nth-child(3) .picture > img {
+        margin-top: -25px; }
       #team-content .members-list .nav .thumbnail p,
       #team-content .members-list .nav .join p {
         padding: 10px 7px;
@@ -1353,14 +1357,14 @@ ul {
       #team-content .members-list .nav .thumbnail .picture {
         height: 140px; }
         #team-content .members-list .nav .thumbnail .picture > img {
-          margin-top: -30px; }
+          margin-top: -24px; }
         #team-content .members-list .nav .thumbnail .picture .hover img {
           height: 38px;
           width: 44px;
           margin-top: -19px;
           margin-left: -22px; }
       #team-content .members-list .nav .thumbnail:nth-child(3) .picture > img {
-        margin-top: -18px; }
+        margin-top: -35px; }
       #team-content .members-list .nav .thumbnail p,
       #team-content .members-list .nav .join p {
         font-size: 18px; }

@@ -377,7 +377,7 @@ ul {
   @media screen and (min-width: 1600px) {
     #more-content h2,
     #contacts h2 {
-      margin: 100px 20% 70px 20%; } }
+      margin: 100px 20% 35px 20%; } }
   @media screen and (min-width: 1920px) {
     #more-content h2,
     #contacts h2 {
@@ -447,12 +447,12 @@ ul {
     		/*.language-mobile {
     			margin-left: 30px;
     			margin-bottom: 30px;
-
+    
     			a {
     				margin-right: 35px;
     				padding: 0 20px 7px 0;
     				border-bottom: 2px solid transparent;
-
+    
     				&.active {
     					border-bottom-color: $colorRed;
     				}
@@ -633,7 +633,7 @@ ul {
   opacity: 0;
   	/*@media screen and (min-width: 1366px) and (max-width: 1681px) {
   		background-image: url('../images/dots.png');
-
+  
   		.slide {
   			.description {
   				padding: 20px;
@@ -738,7 +738,8 @@ ul {
       #index-content .description p.desktop {
         display: none; }
   #index-content .slide svg {
-    position: absolute;}
+    position: absolute;
+    display: none; }
   #index-content .slide.first svg.top {
     top: 0;
     left: 30%; }
@@ -868,7 +869,8 @@ ul {
   @media screen and (min-width: 1920px) {
     #index-content {
       background-image: url(../images/grid-small-dots.png);
-      background-position-y: 100%; }
+      background-position-y: 100%;
+      background-size: cover; }
       #index-content h2 {
         top: 37%;
         font-size: 80px; }
@@ -1009,7 +1011,8 @@ ul {
       height: 150px !important;
       margin-top: -8px; }
     #team-content .member-details svg {
-      position: absolute;}
+      position: absolute;
+      display: none; }
       #team-content .member-details svg.top {
         top: 3px;
         left: 90px; }
@@ -1099,14 +1102,11 @@ ul {
               #team-content .member-details .slide .details .hobbies ul li:before {
                 content: '';
                 position: absolute;
-                top: 9px;
+                top: 3px;
                 left: -20px;
                 height: 15px;
                 width: 15px;
                 border-radius: 50%; }
-              @media screen and (orientation: landscape) {
-                #team-content .member-details .slide .details .hobbies ul li:before {
-                  top: 3px; } }
         #team-content .member-details .slide .details p {
           display: none;
           max-height: 60px;
@@ -1434,13 +1434,14 @@ ul {
       border-bottom: 2px solid transparent; }
   #more-content .about {
     display: inline-block;
+    width: 80%;
     margin-left: 20%; }
     #more-content .about section {
       display: inline-block;
       width: 75%;
       margin-bottom: 30px; }
-      #more-content .about section div {
-        margin-bottom: 40px; }
+      #more-content .about section > div {
+        margin-bottom: 20px; }
   #more-content .slick-slider {
     height: 100%; }
     #more-content .slick-slider .slick-list,
@@ -1457,7 +1458,7 @@ ul {
     font-weight: 600; }
   #more-content p {
     margin: 0;
-    line-height: 18px; }
+    line-height: 24px; }
   #more-content ul {
     margin-top: 0;
     padding: 0; }
@@ -1474,7 +1475,8 @@ ul {
   #more-content .slide {
     height: 100%; }
     #more-content .slide svg {
-      position: absolute;}
+      position: absolute;
+      display: none; }
     #more-content .slide.first svg.top {
       top: 0;
       left: 9%; }
@@ -1489,6 +1491,12 @@ ul {
   #more-content .slide.first svg.bottom {
     width: 1200px;
     height: 300px; } }
+    #more-content .slide.first .about section div:last-child p {
+      margin-bottom: 10px; }
+    #more-content .slide.first .about section ul {
+      margin-bottom: 0; }
+    #more-content .slide.first .about section .wrap {
+      margin-top: 0; }
     #more-content .slide.second svg.top {
       top: 0;
       left: 33%; }
@@ -1506,10 +1514,11 @@ ul {
     #more-content .slide.second h3:first-child {
       position: relative;
       display: inline-block;
-      margin: 25px 20% 25px 0; }
+      margin: 25px 20% 25px 0;
+      padding-top: 5px; }
       #more-content .slide.second h3:first-child img {
         position: absolute;
-        top: 0;
+        top: 1px;
         height: 25px; }
         #more-content .slide.second h3:first-child img:first-child {
           left: -9px; }
@@ -1526,15 +1535,13 @@ ul {
     #more-content .slide.second .about {
       margin-top: 20px; }
       #more-content .slide.second .about > div {
-        width: 75%;
-        padding-top: 30px; }
+        width: 75%; }
     #more-content .slide.second .item {
       position: relative;
       display: inline-block;
-      float: left;
       text-align: center; }
       #more-content .slide.second .item:nth-child(2) {
-        margin: 0 100px; }
+        margin: 0 45px; }
       #more-content .slide.second .item img {
         display: inline-block; }
     #more-content .slide.third #tab-1 svg.bottom {
@@ -1603,6 +1610,10 @@ ul {
       #more-content .slide.third #tabs p {
         margin-bottom: 35px;
         color: #fff; }
+      #more-content .slide.third #tabs #tab-2 p {
+        margin-bottom: 0; }
+      #more-content .slide.third #tabs #tab-2 ul {
+        margin-top: 35px; }
       #more-content .slide.third #tabs li {
         color: #fff; }
       #more-content .slide.third #tabs img {
@@ -1626,7 +1637,7 @@ ul {
         font-size: 14px; }
       #more-content .about section {
         width: auto; }
-        #more-content .about section div {
+        #more-content .about section > div {
           margin-bottom: 20px; }
     #more-content #slider-nav .slick-track {
       display: -webkit-box;
@@ -1641,9 +1652,10 @@ ul {
     #more-content .slide.second p {
       width: 100%; }
     #more-content .slide.second .about > div {
-      width: 91%; }
+      width: 91%;
+      text-align: center; }
       #more-content .slide.second .about > div .item {
-        width: 30%; }
+        width: 45%; }
         #more-content .slide.second .about > div .item:nth-child(2) {
           margin: 0 5%; }
         #more-content .slide.second .about > div .item img {
@@ -1668,26 +1680,22 @@ ul {
     #more-content {
       padding: 30px 10px 10px 10px;
       background-image: url("../images/grid-mobile-portrait.png"); }
-      #more-content.wrap {
-        height: calc(100vh - 70px); }
       #more-content .slide.third #tabs p {
         margin-bottom: 20px; } }
   @media screen and (max-width: 1023px) and (orientation: landscape) {
     #more-content {
       padding: 30px 10px 10px 10px;
       background-image: url("../images/grid-mobile-landscape.png"); }
-      #more-content.wrap {
-        height: calc(100vh - 70px); }
       #more-content h2 {
         margin-bottom: 10px; }
       #more-content .about h4 {
         margin-bottom: 0; }
-      #more-content .about section div {
+      #more-content .about section > div {
+        float: left;
         margin-bottom: 10px; }
-        #more-content .about section div:first-child, #more-content .about section div:nth-child(2) {
-          float: left;
+        #more-content .about section > div:first-child, #more-content .about section > div:nth-child(2) {
           width: 48%; }
-        #more-content .about section div:first-child {
+        #more-content .about section > div:first-child {
           margin-right: 4%; }
       #more-content .slick-slide {
         height: 100%;
@@ -1701,7 +1709,8 @@ ul {
         #more-content .slick-slide.second .about > div {
           padding-top: 0; }
           #more-content .slick-slide.second .about > div .item {
-            width: 16%; }
+            float: left;
+            width: 30%; }
             #more-content .slick-slide.second .about > div .item img {
               width: 75%; }
         #more-content .slick-slide.third #tabs .ui-tabs-panel img {
@@ -1712,7 +1721,7 @@ ul {
     #more-content .slide {
       padding-top: 50px; }
       #more-content .slide.second h3:first-child img {
-        top: 0px;
+        top: -1px;
         height: 60px; }
         #more-content .slide.second h3:first-child img:first-child {
           left: -20px; }
@@ -1720,6 +1729,9 @@ ul {
           right: -20px; }
       #more-content .slide.second .about > div {
         width: 75%; }
+        #more-content .slide.second .about > div .item {
+          float: left;
+          width: 25%; }
       #more-content .slide ul li {
         font-size: 18px; }
       #more-content .slide h3 {
@@ -1728,7 +1740,6 @@ ul {
         font-size: 24px; } }
   @media screen and (min-width: 1024px) {
     #more-content.wrap {
-      height: calc(100vh - 30px);
       padding-bottom: 0; }
     #more-content p {
       line-height: 25px; }
@@ -1743,6 +1754,12 @@ ul {
         #more-content .slick-slider .slide h2 {
           margin-left: 20%;
           margin-top: 50px; }
+        #more-content .slick-slider .slide.second .about > div {
+          width: 90%; }
+          #more-content .slick-slider .slide.second .about > div .item {
+            width: 31%; }
+            #more-content .slick-slider .slide.second .about > div .item:nth-child(2) {
+              margin: 0 20px; }
         #more-content .slick-slider .slide.third #tabs .ui-tabs-panel {
           width: 70%; }
           #more-content .slick-slider .slide.third #tabs .ui-tabs-panel img {
@@ -1758,6 +1775,12 @@ ul {
       padding-top: 8px; }
     #more-content .slide svg {
       display: inline-block; }
+    #more-content .slide.first .about section div .wrap div {
+      float: left;
+      width: 50%; }
+      #more-content .slide.first .about section div .wrap div:last-child {
+        width: 40%;
+        margin-left: 10%; }
     #more-content .slide.third #tabs img {
       right: -280px; }
     #more-content p {
@@ -1784,6 +1807,7 @@ ul {
     #more-content .slick-slider .slide.second .about {
       margin-top: 0; }
       #more-content .slick-slider .slide.second .about > div {
+        width: 50%;
         padding-top: 50px; }
     #more-content .slick-slider .slide.third .about {
       height: 89vh; }
@@ -2014,7 +2038,7 @@ ul {
         margin-bottom: 55px;
         font-size: 16px; }
         #customers-content .customers h4:before, #customers-content .customers h4:after {
-          top: -35px;
+          top: -30px;
           font-size: 62px; }
       #customers-content .customers .customer span {
         padding: 0 25%; }

@@ -20,7 +20,7 @@ s16.attr({width:sWidth4,height:sHeight4});
 
 line16.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play20(){
   for(i=0;i<line16.length;i++){
    if(i==0){
      randomNum = getRandom();
@@ -35,7 +35,10 @@ setInterval(function(){
      line16[i+1].animate({ 'x1' : randomNum/2 , 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play20();
+setInterval(play20, speed);
 ////////////////////////////////////////////////////////////////////////////////////////
 var s17 = Snap( $('.slider-for-more .first svg.top')[1] );
 
@@ -46,7 +49,7 @@ s17.attr({width:sWidth4,height:sHeight4});
 
 line17.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play21(){
   for(i=0;i<line17.length;i++){
    if(i==0){
      randomNum = getRandom();
@@ -61,7 +64,10 @@ setInterval(function(){
      line17[i+1].animate({ 'x1' : randomNum/2 , 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play21();
+setInterval(play21, speed);
 /////////////////////////////////////////////////////////////////////////////////////////
 var s18 = Snap( $('.slider-for-more .first svg.top')[2] );
 
@@ -72,7 +78,7 @@ s18.attr({width:sWidth4,height:sHeight4});
 
 line18.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play22(){
   for(i=0;i<line18.length;i++){
    if(i==0){
      randomNum = getRandom();
@@ -87,7 +93,10 @@ setInterval(function(){
      line18[i+1].animate({ 'x1' : randomNum/2,  'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play22();
+setInterval(play22, speed);
 ///////////////////////////////////////////////////////////////////////////////////////
 var s19 = Snap( $('.slider-for-more .first svg.top')[3] );
 
@@ -98,7 +107,7 @@ s19.attr({width:sWidth4,height:sHeight4});
 
 line19.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play23(){
   for(i=0;i<line19.length;i++){
    if(i==0){
      randomNum = getRandom();
@@ -113,5 +122,7 @@ setInterval(function(){
      line19[i+1].animate({ 'x1' : randomNum/2, 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
 
+play23();
+setInterval(play23, speed);

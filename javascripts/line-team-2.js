@@ -10,7 +10,7 @@ s56.attr({width:sWidth14,height:sHeight14});
 
 line56.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play56(){
   for(i=0;i<line56.length;i++){
    if(i==0){
      randomNum = getRandomSmall();
@@ -25,7 +25,10 @@ setInterval(function(){
      line56[i+1].animate({ 'x1' : randomNum, 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play56();
+setInterval(play56, speed);
 ////////////////////////////////////////////////////////////////////////////////////////
 var s57 = Snap( $('.slider-for-team .second svg.top')[1] );
 
@@ -35,7 +38,7 @@ s57.attr({width:sWidth14,height:sHeight14});
 
 line57.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play57(){
   for(i=0;i<line57.length;i++){
    if(i==0){
      randomNum = getRandomSmall();
@@ -50,7 +53,10 @@ setInterval(function(){
      line57[i+1].animate({ 'x1' : 50, 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play57();
+setInterval(play57, speed);
 /////////////////////////////////////////////////////////////////////////////////////////
 var s58 = Snap( $('.slider-for-team .second svg.top')[2] );
 
@@ -60,7 +66,7 @@ s58.attr({width:sWidth14,height:sHeight14});
 
 line58.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play58(){
   for(i=0;i<line58.length;i++){
    if(i==0){
      randomNum = getRandomSmall();
@@ -75,7 +81,10 @@ setInterval(function(){
      line58[i+1].animate({ 'x1' : 75, 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play58();
+setInterval(play58, speed);
 ///////////////////////////////////////////////////////////////////////////////////////
 var s59 = Snap( $('.slider-for-team .second svg.top')[3] );
 
@@ -85,7 +94,7 @@ s59.attr({width:sWidth14,height:sHeight14});
 
 line59.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play59(){
   for(i=0;i<line59.length;i++){
    if(i==0){
      randomNum = getRandomSmall();
@@ -100,7 +109,10 @@ setInterval(function(){
      line59[i+1].animate({ 'x1' : 120, 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play59();
+setInterval(play59, speed);
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -115,7 +127,7 @@ s60.attr({width:sWidth15,height:sHeight15});
 
 line60.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play60(){
   for(i=0;i<line60.length;i++){
    if(i==0){
      randomNum = getRandomSmall();
@@ -130,7 +142,10 @@ setInterval(function(){
      line60[i+1].animate({ 'x1' : 20, 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play60();
+setInterval(play60, speed);
 ////////////////////////////////////////////////////////////////////////////////////////
 var s61 = Snap( $('.slider-for-team .second svg.middle')[1] );
 
@@ -140,7 +155,7 @@ s61.attr({width:sWidth15,height:sHeight15});
 
 line61.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play61(){
   for(i=0;i<line61.length;i++){
    if(i==0){
      randomNum = getRandomSmall();
@@ -155,7 +170,10 @@ setInterval(function(){
      line61[i+1].animate({ 'x1' : randomNum, 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play61();
+setInterval(play61, speed);
 /////////////////////////////////////////////////////////////////////////////////////////
 var s62 = Snap( $('.slider-for-team .second svg.middle')[2] );
 
@@ -165,7 +183,7 @@ s62.attr({width:sWidth15,height:sHeight15});
 
 line62.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play62(){
   for(i=0;i<line62.length;i++){
    if(i==0){
      randomNum = getRandomSmall();
@@ -180,7 +198,10 @@ setInterval(function(){
      line62[i+1].animate({ 'x1' : 60, 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play62();
+setInterval(play62, speed);
 ///////////////////////////////////////////////////////////////////////////////////////
 var s63 = Snap( $('.slider-for-team .second svg.middle')[3] );
 
@@ -190,7 +211,7 @@ s63.attr({width:sWidth15,height:sHeight15});
 
 line63.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play63(){
   for(i=0;i<line63.length;i++){
    if(i==0){
      randomNum = getRandomSmall();
@@ -205,7 +226,10 @@ setInterval(function(){
      line63[i+1].animate({ 'x1' : 75, 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play63();
+setInterval(play63, speed);
 
 //////////////////////////////////////////////////////////////////////////////////////////
 
@@ -220,7 +244,7 @@ s64.attr({width:sWidth16,height:sHeight16});
 
 line64.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play64(){
   for(i=0;i<line64.length;i++){
    if(i==0){
      randomNum = getRandomSmall();
@@ -235,7 +259,10 @@ setInterval(function(){
      line64[i+1].animate({ 'x1' : randomNum, 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play64();
+setInterval(play64, speed);
 ////////////////////////////////////////////////////////////////////////////////////////
 var s65 = Snap( $('.slider-for-team .second svg.bottom')[1] );
 
@@ -245,7 +272,7 @@ s65.attr({width:sWidth16,height:sHeight16});
 
 line65.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play65(){
   for(i=0;i<line65.length;i++){
    if(i==0){
      randomNum = getRandomSmall();
@@ -260,7 +287,10 @@ setInterval(function(){
      line65[i+1].animate({ 'x1' : 50, 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play65();
+setInterval(play65, speed);
 /////////////////////////////////////////////////////////////////////////////////////////
 var s66 = Snap( $('.slider-for-team .second svg.bottom')[2] );
 
@@ -270,7 +300,7 @@ s66.attr({width:sWidth16,height:sHeight16});
 
 line66.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play66(){
   for(i=0;i<line66.length;i++){
    if(i==0){
      randomNum = getRandomSmall();
@@ -285,7 +315,10 @@ setInterval(function(){
      line66[i+1].animate({ 'x1' : 75, 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play66();
+setInterval(play66, speed);
 ///////////////////////////////////////////////////////////////////////////////////////
 var s67 = Snap( $('.slider-for-team .second svg.bottom')[3] );
 
@@ -295,7 +328,7 @@ s67.attr({width:sWidth16,height:sHeight16});
 
 line67.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play67(){
   for(i=0;i<line67.length;i++){
    if(i==0){
      randomNum = getRandomSmall();
@@ -310,6 +343,9 @@ setInterval(function(){
      line67[i+1].animate({ 'x1' : 120, 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play67();
+setInterval(play67, speed);
 
 

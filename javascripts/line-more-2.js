@@ -10,7 +10,7 @@ s20.attr({width:sWidth5,height:sHeight5});
 
 line20.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play24(){
   for(i=0;i<line20.length;i++){
    if(i==0){
      randomNum = getRandom();
@@ -25,7 +25,10 @@ setInterval(function(){
      line20[i+1].animate({ 'x1' : 250, 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play24();
+setInterval(play24, speed);
 ////////////////////////////////////////////////////////////////////////////////////////
 var s21 = Snap( $('.slider-for-more .first svg.bottom')[1] );
 
@@ -36,7 +39,7 @@ s21.attr({width:sWidth5,height:sHeight5});
 
 line21.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play25(){
   for(i=0;i<line21.length;i++){
    if(i==0){
      randomNum = getRandom();
@@ -51,7 +54,10 @@ setInterval(function(){
      line21[i+1].animate({ 'x1' : 750, 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play25();
+setInterval(play25, speed);
 /////////////////////////////////////////////////////////////////////////////////////////
 var s22 = Snap( $('.slider-for-more .first svg.bottom')[2] );
 
@@ -62,7 +68,7 @@ s22.attr({width:sWidth5,height:sHeight5});
 
 line22.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play26(){
   for(i=0;i<line22.length;i++){
    if(i==0){
      randomNum = getRandom();
@@ -77,7 +83,10 @@ setInterval(function(){
      line22[i+1].animate({ 'x1' : 600, 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play26();
+setInterval(play26, speed);
 ///////////////////////////////////////////////////////////////////////////////////////
 var s23 = Snap( $('.slider-for-more .first svg.bottom')[3] );
 
@@ -88,7 +97,7 @@ s23.attr({width:sWidth5,height:sHeight5});
 
 line23.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play27(){
   for(i=0;i<line23.length;i++){
    if(i==0){
      randomNum = getRandom();
@@ -103,6 +112,9 @@ setInterval(function(){
      line23[i+1].animate({ 'x1' : 400, 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play27();
+setInterval(play27, speed);
 
 

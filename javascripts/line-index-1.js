@@ -21,7 +21,7 @@ function getRandom(){
   return Math.floor(Math.random()*(200-50)+50);
 };
 
-setInterval(function(){
+function play(){
   for(i=0;i<line.length;i++){
    if(i==0){
      randomNum = getRandom();
@@ -36,7 +36,9 @@ setInterval(function(){
      line[i+1].animate({ 'x1' : randomNum + 75 , 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+play();
+setInterval(play, speed);
 ////////////////////////////////////////////////////////////////////////////////////////
 var s1 = Snap( $('.slider-for-index .first svg.top')[1] );
 
@@ -47,7 +49,7 @@ s1.attr({width:sWidth,height:sHeight});
 
 line1.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play1() {
   for(i=0;i<line1.length;i++){
    if(i==0){
      randomNum = getRandom();
@@ -62,7 +64,10 @@ setInterval(function(){
      line1[i+1].animate({ 'x1' : randomNum - 25 , 'y1' : randomNum + 100},speed,easing);      
    }
   };
-},speed);
+}
+
+play1();
+setInterval(play1,speed);
 /////////////////////////////////////////////////////////////////////////////////////////
 var s2 = Snap( $('.slider-for-index .first svg.top')[2] );
 
@@ -73,7 +78,7 @@ s2.attr({width:sWidth,height:sHeight});
 
 line2.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play2(){
   for(i=0;i<line2.length;i++){
    if(i==0){
      randomNum = getRandom();
@@ -88,7 +93,10 @@ setInterval(function(){
      line2[i+1].animate({ 'x1' : randomNum, 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play2();
+setInterval(play2, speed);
 ///////////////////////////////////////////////////////////////////////////////////////
 var s3 = Snap( $('.slider-for-index .first svg.top')[3] );
 
@@ -99,7 +107,7 @@ s3.attr({width:sWidth,height:sHeight});
 
 line3.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play3(){
   for(i=0;i<line3.length;i++){
    if(i==0){
      randomNum = getRandom();
@@ -114,6 +122,8 @@ setInterval(function(){
      line3[i+1].animate({ 'x1' : randomNum + 50, 'y1' : randomNum - 30},speed,easing);      
    }
   };
-},speed);
+}
 
+play3();
+setInterval(play3, speed);
 

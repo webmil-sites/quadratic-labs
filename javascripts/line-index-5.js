@@ -10,7 +10,7 @@ s52.attr({width:sWidth13,height:sHeight13});
 
 line52.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play16(){
   for(i=0;i<line52.length;i++){
    if(i==0){
      randomNum = getRandom();
@@ -25,7 +25,10 @@ setInterval(function(){
      line52[i+1].animate({ 'x1' : randomNum/2 , 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play16();
+setInterval(play16, speed);
 ////////////////////////////////////////////////////////////////////////////////////////
 var s53 = Snap( $('.slider-for-index .third svg.bottom')[1] );
 
@@ -36,7 +39,7 @@ s53.attr({width:sWidth13,height:sHeight13});
 
 line53.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play17(){
   for(i=0;i<line53.length;i++){
    if(i==0){
      randomNum = getRandom();
@@ -51,7 +54,10 @@ setInterval(function(){
      line53[i+1].animate({ 'x1' : randomNum/2 , 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play17();
+setInterval(play17, speed);
 /////////////////////////////////////////////////////////////////////////////////////////
 var s54 = Snap( $('.slider-for-index .third svg.bottom')[2] );
 
@@ -62,7 +68,7 @@ s54.attr({width:sWidth13,height:sHeight13});
 
 line54.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play18(){
   for(i=0;i<line54.length;i++){
    if(i==0){
      randomNum = getRandom();
@@ -77,7 +83,10 @@ setInterval(function(){
      line54[i+1].animate({ 'x1' : randomNum/2,  'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play18();
+setInterval(play18, speed);
 ///////////////////////////////////////////////////////////////////////////////////////
 var s55 = Snap( $('.slider-for-index .third svg.bottom')[3] );
 
@@ -88,7 +97,7 @@ s55.attr({width:sWidth13,height:sHeight13});
 
 line55.attr({stroke: Color,strokeWidth: lineWidth });
 
-setInterval(function(){
+function play19(){
   for(i=0;i<line55.length;i++){
    if(i==0){
      randomNum = getRandom();
@@ -103,5 +112,8 @@ setInterval(function(){
      line55[i+1].animate({ 'x1' : randomNum/2, 'y1' : randomNum},speed,easing);      
    }
   };
-},speed);
+}
+
+play19();
+setInterval(play19, speed);
 

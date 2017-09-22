@@ -42,27 +42,27 @@ var chart2= new Chart(ctx2, {
     }
 });
 
-var ctx3 = document.getElementById('chart3').getContext('2d');
-var chart3= new Chart(ctx3, {
-    // The type of chart we want to create
-    type: 'doughnut',
+// var ctx3 = document.getElementById('chart3').getContext('2d');
+// var chart3= new Chart(ctx3, {
+//     // The type of chart we want to create
+//     type: 'doughnut',
 
-    // The data for our dataset
-    data: {
-        datasets: [{
-            backgroundColor: ["#fe0000", "#ff6d25", "#b51c4f"],
-            borderColor: '#0000D8',
-            data: [80, 20]
-        }]
-    },
+//     // The data for our dataset
+//     data: {
+//         datasets: [{
+//             backgroundColor: ["#fe0000", "#ff6d25", "#b51c4f"],
+//             borderColor: '#0000D8',
+//             data: [80, 20]
+//         }]
+//     },
 
-    // Configuration options go here
-    options: {
-        tooltips: {enabled: false},
-        hover: {mode: null},
-        rotation: 90
-    }
-});
+//     // Configuration options go here
+//     options: {
+//         tooltips: {enabled: false},
+//         hover: {mode: null},
+//         rotation: 90
+//     }
+// });
 
 var ctx4 = document.getElementById('chart4').getContext('2d');
 var chart4= new Chart(ctx4, {

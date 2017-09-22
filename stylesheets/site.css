@@ -738,8 +738,7 @@ ul {
       #index-content .description p.desktop {
         display: none; }
   #index-content .slide svg {
-    position: absolute;
-    display: none; }
+    position: absolute;}
   #index-content .slide.first svg.top {
     top: 0;
     left: 30%; }
@@ -1010,8 +1009,7 @@ ul {
       height: 150px !important;
       margin-top: -8px; }
     #team-content .member-details svg {
-      position: absolute;
-      display: none; }
+      position: absolute;}
       #team-content .member-details svg.top {
         top: 3px;
         left: 90px; }
@@ -1476,8 +1474,7 @@ ul {
   #more-content .slide {
     height: 100%; }
     #more-content .slide svg {
-      position: absolute;
-      display: none; }
+      position: absolute;}
     #more-content .slide.first svg.top {
       top: 0;
       left: 9%; }

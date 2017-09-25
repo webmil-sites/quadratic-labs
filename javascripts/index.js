@@ -29,11 +29,6 @@ $(document).ready(function () {
     pauseOnHover: false
   });
 
-  $('.slider-for-index').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-    window['slide' + nextSlide]()
-    moreLink.prop('href', moreHref + '#' + nextSlide)
-  });
-
   var moreLink = $('.js-more');
   var moreHref = moreLink.prop('href');
 
@@ -41,15 +36,6 @@ $(document).ready(function () {
     window['slide' + nextSlide]()
     moreLink.prop('href', moreHref + '#' + nextSlide)
   });
-
-  var slideNumber = document.location.hash ? parseInt(document.location.hash[1]) : 0;
-  setTimeout(function () {
-    if (slideNumber == 3) {
-      $('.slick-slide').eq(2).click();
-      $('a[href="#tab-2"]').click();
-    }
-    $('.slick-slide').eq(slideNumber).click();
-  }, 100);
 
 
   $('.slider-nav-index').slick({

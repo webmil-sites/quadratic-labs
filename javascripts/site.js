@@ -12,6 +12,15 @@ $(document).ready(function () {
     }, 300);
   }, 500);
 
+  var slideNumber = document.location.hash ? parseInt(document.location.hash[1]) : 0;
+  setTimeout(function () {
+    if (slideNumber == 3) {
+      $('.slick-slide').eq(2).click();
+      $('a[href="#tab-2"]').click();
+    }
+    $('.slick-slide').eq(slideNumber).click();
+  }, 100);
+
   $(document).on('click', '#mobile-nav .open', function(event){
     event.preventDefault();
     $('#mobile-nav .menu').addClass('opened');
@@ -19,6 +28,10 @@ $(document).ready(function () {
 
   $(document).on('click', '#mobile-nav .menu .close', function(event){
     event.preventDefault();
+    $('#mobile-nav .menu').removeClass('opened');
+  });
+
+  $(document).on('click', '#mobile-nav .menu li', function(event){
     $('#mobile-nav .menu').removeClass('opened');
   });
 

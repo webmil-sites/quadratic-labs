@@ -13,6 +13,7 @@ $(document).ready(function () {
   }, 500);
 
   $('.slider-for-team').slick({
+    accessibility: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,

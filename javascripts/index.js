@@ -16,6 +16,7 @@ $(document).ready(function () {
 
 
   $('.slider-for-index').slick({
+    accessibility: false,
     autoplay: true,
     autoplaySpeed: 7500,
     infinite: true,

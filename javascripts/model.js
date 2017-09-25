@@ -29,11 +29,13 @@
 
   var tween;
 
-  function animateSlide(newRotation) {
-    tween && tween.stop();
-    tween = new TWEEN.Tween(logo.rotation).to(newRotation, 2000)
-                     .easing(TWEEN.Easing.Back.Out)
-                     .start();
+  function animateSlide(newRotation) {    
+    player.play();    
+    tween && tween.stop();    
+    tween = new TWEEN.Tween(logo.rotation).to(newRotation, 2000)      
+    .easing(TWEEN.Easing.Back.Out)      
+    .onComplete(function () { player.stop(); })      
+    .start();  
   }
 
   function toRad(deg) {
